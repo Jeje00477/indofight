@@ -1,0 +1,353 @@
+id,kategori,pemilik,isi,ukuran_asli,frame,loop,alat,file,vertical_slice,spritecook_asset_id,status,catatan
+mahasiswa_base,karakter,mahasiswa,Gambar dasar canonical,160x160,1,,SpriteCook generate_game_art + Aseprite,art/characters/mahasiswa/indofight_char_mahasiswa_base.png,,,todo,
+mahasiswa_splash,karakter,mahasiswa,Splash art,270x480,1,,SpriteCook + upscale 4x,art/characters/mahasiswa/indofight_char_mahasiswa_splash.png,,,todo,
+mahasiswa_icon,karakter,mahasiswa,Ikon grid,64x64,1,,SpriteCook + upscale 4x,art/characters/mahasiswa/indofight_char_mahasiswa_icon.png,,,todo,
+mahasiswa_icon_hud,karakter,mahasiswa,Ikon HUD,32x32,1,,Aseprite (dari ikon grid),art/characters/mahasiswa/indofight_char_mahasiswa_iconhud.png,,,todo,
+mahasiswa_idle,animasi,mahasiswa,Idle,160x160/frame,6,ya,SpriteCook animate_game_art + Aseprite,art/characters/mahasiswa/indofight_char_mahasiswa_idle_sheet.png,,,todo,
+mahasiswa_walk_forward,animasi,mahasiswa,Walk Forward,160x160/frame,8,ya,SpriteCook animate_game_art + Aseprite,art/characters/mahasiswa/indofight_char_mahasiswa_walk_forward_sheet.png,,,todo,Walk Backward memakai sheet ini diputar terbalik di engine
+mahasiswa_dash,animasi,mahasiswa,Dash / Step,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/mahasiswa/indofight_char_mahasiswa_dash_sheet.png,,,todo,
+mahasiswa_jump,animasi,mahasiswa,Jump,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/mahasiswa/indofight_char_mahasiswa_jump_sheet.png,,,todo,
+mahasiswa_crouch,animasi,mahasiswa,Crouch,160x160/frame,2,tidak,SpriteCook animate_game_art + Aseprite,art/characters/mahasiswa/indofight_char_mahasiswa_crouch_sheet.png,,,todo,
+mahasiswa_light_punch,animasi,mahasiswa,Light Punch,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/mahasiswa/indofight_char_mahasiswa_light_punch_sheet.png,,,todo,
+mahasiswa_heavy_punch,animasi,mahasiswa,Heavy Punch,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/mahasiswa/indofight_char_mahasiswa_heavy_punch_sheet.png,,,todo,
+mahasiswa_light_kick,animasi,mahasiswa,Light Kick,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/mahasiswa/indofight_char_mahasiswa_light_kick_sheet.png,,,todo,
+mahasiswa_heavy_kick,animasi,mahasiswa,Heavy Kick,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/mahasiswa/indofight_char_mahasiswa_heavy_kick_sheet.png,,,todo,
+mahasiswa_block,animasi,mahasiswa,Block,160x160/frame,2,tidak,SpriteCook animate_game_art + Aseprite,art/characters/mahasiswa/indofight_char_mahasiswa_block_sheet.png,,,todo,
+mahasiswa_hit,animasi,mahasiswa,Hit,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/mahasiswa/indofight_char_mahasiswa_hit_sheet.png,,,todo,
+mahasiswa_knockup,animasi,mahasiswa,Knockup,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/mahasiswa/indofight_char_mahasiswa_knockup_sheet.png,,,todo,
+mahasiswa_knockdown,animasi,mahasiswa,Knockdown,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/mahasiswa/indofight_char_mahasiswa_knockdown_sheet.png,,,todo,
+mahasiswa_special,animasi,mahasiswa,Special Skill,160x160/frame,8,tidak,SpriteCook animate_game_art + Aseprite,art/characters/mahasiswa/indofight_char_mahasiswa_special_sheet.png,,,todo,
+mahasiswa_ultimate_cast,animasi,mahasiswa,Ultimate Cast,160x160/frame,10,tidak,SpriteCook animate_game_art + Aseprite,art/characters/mahasiswa/indofight_char_mahasiswa_ultimate_cast_sheet.png,,,todo,
+mahasiswa_defeat,animasi,mahasiswa,Defeat,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/mahasiswa/indofight_char_mahasiswa_defeat_sheet.png,,,todo,
+mahasiswa_victory,animasi,mahasiswa,Victory,160x160/frame,8,ya,SpriteCook animate_game_art + Aseprite,art/characters/mahasiswa/indofight_char_mahasiswa_victory_sheet.png,,,todo,
+mahasiswa_taunt,animasi,mahasiswa,Taunt,160x160/frame,6,ya,SpriteCook animate_game_art + Aseprite,art/characters/mahasiswa/indofight_char_mahasiswa_taunt_sheet.png,,,todo,
+mahasiswa_toa_soundwave,properti,mahasiswa,Gelombang suara Sonic Toa (VFX),64x48,8,,SpriteCook,art/characters/mahasiswa/props/indofight_char_mahasiswa_toa_soundwave.png,,,todo,
+mahasiswa_burning_tire,properti,mahasiswa,Ban bekas terbakar (proyektil ultimate),32x32,6,,SpriteCook,art/characters/mahasiswa/props/indofight_char_mahasiswa_burning_tire.png,,,todo,
+mahasiswa_molotov,properti,mahasiswa,Molotov (proyektil ultimate),16x24,4,,SpriteCook,art/characters/mahasiswa/props/indofight_char_mahasiswa_molotov.png,,,todo,
+mahasiswa_burn_fire,properti,mahasiswa,Api Burn di tanah,48x32,6,,SpriteCook,art/characters/mahasiswa/props/indofight_char_mahasiswa_burn_fire.png,,,todo,
+jenderal-gemoy_base,karakter,jenderal-gemoy,Gambar dasar canonical,160x160,1,,SpriteCook generate_game_art + Aseprite,art/characters/jenderal-gemoy/indofight_char_jenderal-gemoy_base.png,,,todo,
+jenderal-gemoy_splash,karakter,jenderal-gemoy,Splash art,270x480,1,,SpriteCook + upscale 4x,art/characters/jenderal-gemoy/indofight_char_jenderal-gemoy_splash.png,,,todo,
+jenderal-gemoy_icon,karakter,jenderal-gemoy,Ikon grid,64x64,1,,SpriteCook + upscale 4x,art/characters/jenderal-gemoy/indofight_char_jenderal-gemoy_icon.png,,,todo,
+jenderal-gemoy_icon_hud,karakter,jenderal-gemoy,Ikon HUD,32x32,1,,Aseprite (dari ikon grid),art/characters/jenderal-gemoy/indofight_char_jenderal-gemoy_iconhud.png,,,todo,
+jenderal-gemoy_idle,animasi,jenderal-gemoy,Idle,160x160/frame,6,ya,SpriteCook animate_game_art + Aseprite,art/characters/jenderal-gemoy/indofight_char_jenderal-gemoy_idle_sheet.png,,,todo,
+jenderal-gemoy_walk_forward,animasi,jenderal-gemoy,Walk Forward,160x160/frame,8,ya,SpriteCook animate_game_art + Aseprite,art/characters/jenderal-gemoy/indofight_char_jenderal-gemoy_walk_forward_sheet.png,,,todo,Walk Backward memakai sheet ini diputar terbalik di engine
+jenderal-gemoy_dash,animasi,jenderal-gemoy,Dash / Step,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/jenderal-gemoy/indofight_char_jenderal-gemoy_dash_sheet.png,,,todo,
+jenderal-gemoy_jump,animasi,jenderal-gemoy,Jump,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/jenderal-gemoy/indofight_char_jenderal-gemoy_jump_sheet.png,,,todo,
+jenderal-gemoy_crouch,animasi,jenderal-gemoy,Crouch,160x160/frame,2,tidak,SpriteCook animate_game_art + Aseprite,art/characters/jenderal-gemoy/indofight_char_jenderal-gemoy_crouch_sheet.png,,,todo,
+jenderal-gemoy_light_punch,animasi,jenderal-gemoy,Light Punch,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/jenderal-gemoy/indofight_char_jenderal-gemoy_light_punch_sheet.png,,,todo,
+jenderal-gemoy_heavy_punch,animasi,jenderal-gemoy,Heavy Punch,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/jenderal-gemoy/indofight_char_jenderal-gemoy_heavy_punch_sheet.png,,,todo,
+jenderal-gemoy_light_kick,animasi,jenderal-gemoy,Light Kick,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/jenderal-gemoy/indofight_char_jenderal-gemoy_light_kick_sheet.png,,,todo,
+jenderal-gemoy_heavy_kick,animasi,jenderal-gemoy,Heavy Kick,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/jenderal-gemoy/indofight_char_jenderal-gemoy_heavy_kick_sheet.png,,,todo,
+jenderal-gemoy_block,animasi,jenderal-gemoy,Block,160x160/frame,2,tidak,SpriteCook animate_game_art + Aseprite,art/characters/jenderal-gemoy/indofight_char_jenderal-gemoy_block_sheet.png,,,todo,
+jenderal-gemoy_hit,animasi,jenderal-gemoy,Hit,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/jenderal-gemoy/indofight_char_jenderal-gemoy_hit_sheet.png,,,todo,
+jenderal-gemoy_knockup,animasi,jenderal-gemoy,Knockup,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/jenderal-gemoy/indofight_char_jenderal-gemoy_knockup_sheet.png,,,todo,
+jenderal-gemoy_knockdown,animasi,jenderal-gemoy,Knockdown,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/jenderal-gemoy/indofight_char_jenderal-gemoy_knockdown_sheet.png,,,todo,
+jenderal-gemoy_special,animasi,jenderal-gemoy,Special Skill,160x160/frame,8,tidak,SpriteCook animate_game_art + Aseprite,art/characters/jenderal-gemoy/indofight_char_jenderal-gemoy_special_sheet.png,,,todo,
+jenderal-gemoy_ultimate_cast,animasi,jenderal-gemoy,Ultimate Cast,160x160/frame,10,tidak,SpriteCook animate_game_art + Aseprite,art/characters/jenderal-gemoy/indofight_char_jenderal-gemoy_ultimate_cast_sheet.png,,,todo,
+jenderal-gemoy_defeat,animasi,jenderal-gemoy,Defeat,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/jenderal-gemoy/indofight_char_jenderal-gemoy_defeat_sheet.png,,,todo,
+jenderal-gemoy_victory,animasi,jenderal-gemoy,Victory,160x160/frame,8,ya,SpriteCook animate_game_art + Aseprite,art/characters/jenderal-gemoy/indofight_char_jenderal-gemoy_victory_sheet.png,,,todo,
+jenderal-gemoy_taunt,animasi,jenderal-gemoy,Taunt,160x160/frame,6,ya,SpriteCook animate_game_art + Aseprite,art/characters/jenderal-gemoy/indofight_char_jenderal-gemoy_taunt_sheet.png,,,todo,
+jenderal-gemoy_milk_carton,properti,jenderal-gemoy,Kotak susu (proyektil Susu Lempar),16x16,4,,SpriteCook,art/characters/jenderal-gemoy/props/indofight_char_jenderal-gemoy_milk_carton.png,,,todo,
+jenderal-gemoy_mbg_tray,properti,jenderal-gemoy,Nampan MBG jatuh (proyektil ultimate),32x24,4,,SpriteCook,art/characters/jenderal-gemoy/props/indofight_char_jenderal-gemoy_mbg_tray.png,,,todo,
+jenderal-gemoy_ration_crate,properti,jenderal-gemoy,Kotak ransum berparasut,32x48,6,,SpriteCook,art/characters/jenderal-gemoy/props/indofight_char_jenderal-gemoy_ration_crate.png,,,todo,
+jenderal-gemoy_heli_shadow,properti,jenderal-gemoy,Bayangan helikopter,128x48,4,,SpriteCook,art/characters/jenderal-gemoy/props/indofight_char_jenderal-gemoy_heli_shadow.png,,,todo,
+gatot-kaca_base,karakter,gatot-kaca,Gambar dasar canonical,160x160,1,,SpriteCook generate_game_art + Aseprite,art/characters/gatot-kaca/indofight_char_gatot-kaca_base.png,,,todo,
+gatot-kaca_splash,karakter,gatot-kaca,Splash art,270x480,1,,SpriteCook + upscale 4x,art/characters/gatot-kaca/indofight_char_gatot-kaca_splash.png,,,todo,
+gatot-kaca_icon,karakter,gatot-kaca,Ikon grid,64x64,1,,SpriteCook + upscale 4x,art/characters/gatot-kaca/indofight_char_gatot-kaca_icon.png,,,todo,
+gatot-kaca_icon_hud,karakter,gatot-kaca,Ikon HUD,32x32,1,,Aseprite (dari ikon grid),art/characters/gatot-kaca/indofight_char_gatot-kaca_iconhud.png,,,todo,
+gatot-kaca_idle,animasi,gatot-kaca,Idle,160x160/frame,6,ya,SpriteCook animate_game_art + Aseprite,art/characters/gatot-kaca/indofight_char_gatot-kaca_idle_sheet.png,,,todo,
+gatot-kaca_walk_forward,animasi,gatot-kaca,Walk Forward,160x160/frame,8,ya,SpriteCook animate_game_art + Aseprite,art/characters/gatot-kaca/indofight_char_gatot-kaca_walk_forward_sheet.png,,,todo,Walk Backward memakai sheet ini diputar terbalik di engine
+gatot-kaca_dash,animasi,gatot-kaca,Dash / Step,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/gatot-kaca/indofight_char_gatot-kaca_dash_sheet.png,,,todo,
+gatot-kaca_jump,animasi,gatot-kaca,Jump,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/gatot-kaca/indofight_char_gatot-kaca_jump_sheet.png,,,todo,
+gatot-kaca_crouch,animasi,gatot-kaca,Crouch,160x160/frame,2,tidak,SpriteCook animate_game_art + Aseprite,art/characters/gatot-kaca/indofight_char_gatot-kaca_crouch_sheet.png,,,todo,
+gatot-kaca_light_punch,animasi,gatot-kaca,Light Punch,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/gatot-kaca/indofight_char_gatot-kaca_light_punch_sheet.png,,,todo,
+gatot-kaca_heavy_punch,animasi,gatot-kaca,Heavy Punch,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/gatot-kaca/indofight_char_gatot-kaca_heavy_punch_sheet.png,,,todo,
+gatot-kaca_light_kick,animasi,gatot-kaca,Light Kick,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/gatot-kaca/indofight_char_gatot-kaca_light_kick_sheet.png,,,todo,
+gatot-kaca_heavy_kick,animasi,gatot-kaca,Heavy Kick,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/gatot-kaca/indofight_char_gatot-kaca_heavy_kick_sheet.png,,,todo,
+gatot-kaca_block,animasi,gatot-kaca,Block,160x160/frame,2,tidak,SpriteCook animate_game_art + Aseprite,art/characters/gatot-kaca/indofight_char_gatot-kaca_block_sheet.png,,,todo,
+gatot-kaca_hit,animasi,gatot-kaca,Hit,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/gatot-kaca/indofight_char_gatot-kaca_hit_sheet.png,,,todo,
+gatot-kaca_knockup,animasi,gatot-kaca,Knockup,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/gatot-kaca/indofight_char_gatot-kaca_knockup_sheet.png,,,todo,
+gatot-kaca_knockdown,animasi,gatot-kaca,Knockdown,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/gatot-kaca/indofight_char_gatot-kaca_knockdown_sheet.png,,,todo,
+gatot-kaca_special,animasi,gatot-kaca,Special Skill,160x160/frame,8,tidak,SpriteCook animate_game_art + Aseprite,art/characters/gatot-kaca/indofight_char_gatot-kaca_special_sheet.png,,,todo,
+gatot-kaca_ultimate_cast,animasi,gatot-kaca,Ultimate Cast,160x160/frame,10,tidak,SpriteCook animate_game_art + Aseprite,art/characters/gatot-kaca/indofight_char_gatot-kaca_ultimate_cast_sheet.png,,,todo,
+gatot-kaca_defeat,animasi,gatot-kaca,Defeat,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/gatot-kaca/indofight_char_gatot-kaca_defeat_sheet.png,,,todo,
+gatot-kaca_victory,animasi,gatot-kaca,Victory,160x160/frame,8,ya,SpriteCook animate_game_art + Aseprite,art/characters/gatot-kaca/indofight_char_gatot-kaca_victory_sheet.png,,,todo,
+gatot-kaca_taunt,animasi,gatot-kaca,Taunt,160x160/frame,6,ya,SpriteCook animate_game_art + Aseprite,art/characters/gatot-kaca/indofight_char_gatot-kaca_taunt_sheet.png,,,todo,
+gatot-kaca_wings,properti,gatot-kaca,Sayap terpisah (layer animasi),96x80,8,,SpriteCook,art/characters/gatot-kaca/props/indofight_char_gatot-kaca_wings.png,,,todo,
+gatot-kaca_fist_lightning,properti,gatot-kaca,Aura petir kepalan (VFX),32x32,6,,SpriteCook,art/characters/gatot-kaca/props/indofight_char_gatot-kaca_fist_lightning.png,,,todo,
+gatot-kaca_meteor_dive,properti,gatot-kaca,Efek meteor menukik,64x96,6,,SpriteCook,art/characters/gatot-kaca/props/indofight_char_gatot-kaca_meteor_dive.png,,,todo,
+gatot-kaca_screen_blast,properti,gatot-kaca,Ledakan seluas layar,256x128,8,,SpriteCook,art/characters/gatot-kaca/props/indofight_char_gatot-kaca_screen_blast.png,,,todo,
+emak-emak_base,karakter,emak-emak,Gambar dasar canonical,160x160,1,,SpriteCook generate_game_art (gpt-image-2 low) + tools/pixelize_base.py,art/characters/emak-emak/indofight_char_emak-emak_base.png,ya,dca4990f-4c72-4d2d-a9ac-828bbd913229,review,"Tiga perempat menghadap kanan, pose A (keputusan 8, 12, 13). Menunggu persetujuan Jeje"
+emak-emak_splash,karakter,emak-emak,Splash art,270x480,1,,SpriteCook + upscale 4x,art/characters/emak-emak/indofight_char_emak-emak_splash.png,ya,,todo,Tidak digenerate (keputusan 8). Layar pilih dan versus memakai gambar dasar
+emak-emak_icon,karakter,emak-emak,Ikon grid,64x64,1,,SpriteCook + upscale 4x,art/characters/emak-emak/indofight_char_emak-emak_icon.png,ya,,todo,Tidak digenerate (keputusan 8). Layar pilih dan versus memakai gambar dasar
+emak-emak_icon_hud,karakter,emak-emak,Ikon HUD,32x32,1,,Aseprite (dari ikon grid),art/characters/emak-emak/indofight_char_emak-emak_iconhud.png,ya,,todo,Tidak digenerate (keputusan 8). Layar pilih dan versus memakai gambar dasar
+emak-emak_idle,animasi,emak-emak,Idle,160x160/frame,6,ya,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/emak-emak/emak_emak_rig.tscn,ya,,review,"Animasi 'idle' di AnimationPlayer rig (keputusan 9, 15)"
+emak-emak_walk_forward,animasi,emak-emak,Walk Forward,160x160/frame,8,ya,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/emak-emak/emak_emak_rig.tscn,ya,,review,"Animasi 'walk' di AnimationPlayer rig (keputusan 9, 15)"
+emak-emak_dash,animasi,emak-emak,Dash / Step,160x160/frame,4,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/emak-emak/emak_emak_rig.tscn,ya,,review,"Animasi 'dash dan backdash' di AnimationPlayer rig (keputusan 9, 15)"
+emak-emak_jump,animasi,emak-emak,Jump,160x160/frame,6,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/emak-emak/emak_emak_rig.tscn,ya,,review,"Animasi 'jump' di AnimationPlayer rig (keputusan 9, 15)"
+emak-emak_crouch,animasi,emak-emak,Crouch,160x160/frame,2,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/emak-emak/emak_emak_rig.tscn,ya,,review,"Animasi 'crouch' di AnimationPlayer rig (keputusan 9, 15)"
+emak-emak_light_punch,animasi,emak-emak,Light Punch,160x160/frame,4,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/emak-emak/emak_emak_rig.tscn,ya,,review,"Animasi 'lp' di AnimationPlayer rig (keputusan 9, 15)"
+emak-emak_heavy_punch,animasi,emak-emak,Heavy Punch,160x160/frame,6,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/emak-emak/emak_emak_rig.tscn,ya,,review,"Animasi 'hp' di AnimationPlayer rig (keputusan 9, 15)"
+emak-emak_light_kick,animasi,emak-emak,Light Kick,160x160/frame,4,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/emak-emak/emak_emak_rig.tscn,ya,,review,"Animasi 'lk' di AnimationPlayer rig (keputusan 9, 15)"
+emak-emak_heavy_kick,animasi,emak-emak,Heavy Kick,160x160/frame,6,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/emak-emak/emak_emak_rig.tscn,ya,,review,"Animasi 'hk' di AnimationPlayer rig (keputusan 9, 15)"
+emak-emak_block,animasi,emak-emak,Block,160x160/frame,2,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/emak-emak/emak_emak_rig.tscn,ya,,review,"Animasi 'block' di AnimationPlayer rig (keputusan 9, 15)"
+emak-emak_hit,animasi,emak-emak,Hit,160x160/frame,4,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/emak-emak/emak_emak_rig.tscn,ya,,review,"Animasi 'hit' di AnimationPlayer rig (keputusan 9, 15)"
+emak-emak_knockup,animasi,emak-emak,Knockup,160x160/frame,4,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/emak-emak/emak_emak_rig.tscn,ya,,review,"Animasi 'ko (0 sampai 0,3)' di AnimationPlayer rig (keputusan 9, 15)"
+emak-emak_knockdown,animasi,emak-emak,Knockdown,160x160/frame,6,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/emak-emak/emak_emak_rig.tscn,ya,,review,"Animasi 'ko' (jatuh) dan 'getup' (bangun) di AnimationPlayer rig (keputusan 9, 15, 25)"
+emak-emak_special,animasi,emak-emak,Special Skill,160x160/frame,8,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/emak-emak/emak_emak_rig.tscn,ya,,review,"Animasi 'skill' di AnimationPlayer rig (keputusan 9, 15)"
+emak-emak_ultimate_cast,animasi,emak-emak,Ultimate Cast,160x160/frame,10,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/emak-emak/emak_emak_rig.tscn,ya,,review,"Animasi 'ultimate' di AnimationPlayer rig (keputusan 9, 15)"
+emak-emak_defeat,animasi,emak-emak,Defeat,160x160/frame,6,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/emak-emak/emak_emak_rig.tscn,ya,,review,"Animasi 'defeat' di AnimationPlayer rig (keputusan 9, 15)"
+emak-emak_victory,animasi,emak-emak,Victory,160x160/frame,8,ya,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/emak-emak/emak_emak_rig.tscn,ya,,review,"Animasi 'win' di AnimationPlayer rig (keputusan 9, 15)"
+emak-emak_taunt,animasi,emak-emak,Taunt,160x160/frame,6,ya,SpriteCook animate_game_art + Aseprite,art/characters/emak-emak/indofight_char_emak-emak_taunt_sheet.png,ya,,todo,Belum dibuat. Tidak termasuk daftar animasi keputusan 9 dan 15
+emak-emak_tupperware,properti,emak-emak,Kotak bekal berputar (proyektil),32x24,8,,Blender (tools/blender/render_props.py),art/characters/emak-emak/props/indofight_char_emak-emak_tupperware.png,ya,,review,Render Blender lalu tools/pack_props.py (keputusan 23). Palet props-emak. Salinan game: game/props/bekal.png
+emak-emak_scooter,properti,emak-emak,Motor matic (aset ultimate),96x64,4,,Blender (tools/blender/render_props.py),art/characters/emak-emak/props/indofight_char_emak-emak_scooter.png,ya,,review,Render Blender lalu tools/pack_props.py (keputusan 23). Palet props-emak. Salinan game: game/props/scooter.png
+emak-emak_sein_blink,properti,emak-emak,Lampu sein berkedip (VFX),16x16,2,,Kode (game/scripts/fight_view.gd),game/scripts/fight_view.gd,ya,,review,Digambar dengan kode (keputusan 10)
+intel-bakso_base,karakter,intel-bakso,Gambar dasar canonical,160x160,1,,SpriteCook generate_game_art + Aseprite,art/characters/intel-bakso/indofight_char_intel-bakso_base.png,,,todo,
+intel-bakso_splash,karakter,intel-bakso,Splash art,270x480,1,,SpriteCook + upscale 4x,art/characters/intel-bakso/indofight_char_intel-bakso_splash.png,,,todo,
+intel-bakso_icon,karakter,intel-bakso,Ikon grid,64x64,1,,SpriteCook + upscale 4x,art/characters/intel-bakso/indofight_char_intel-bakso_icon.png,,,todo,
+intel-bakso_icon_hud,karakter,intel-bakso,Ikon HUD,32x32,1,,Aseprite (dari ikon grid),art/characters/intel-bakso/indofight_char_intel-bakso_iconhud.png,,,todo,
+intel-bakso_idle,animasi,intel-bakso,Idle,160x160/frame,6,ya,SpriteCook animate_game_art + Aseprite,art/characters/intel-bakso/indofight_char_intel-bakso_idle_sheet.png,,,todo,
+intel-bakso_walk_forward,animasi,intel-bakso,Walk Forward,160x160/frame,8,ya,SpriteCook animate_game_art + Aseprite,art/characters/intel-bakso/indofight_char_intel-bakso_walk_forward_sheet.png,,,todo,Walk Backward memakai sheet ini diputar terbalik di engine
+intel-bakso_dash,animasi,intel-bakso,Dash / Step,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/intel-bakso/indofight_char_intel-bakso_dash_sheet.png,,,todo,
+intel-bakso_jump,animasi,intel-bakso,Jump,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/intel-bakso/indofight_char_intel-bakso_jump_sheet.png,,,todo,
+intel-bakso_crouch,animasi,intel-bakso,Crouch,160x160/frame,2,tidak,SpriteCook animate_game_art + Aseprite,art/characters/intel-bakso/indofight_char_intel-bakso_crouch_sheet.png,,,todo,
+intel-bakso_light_punch,animasi,intel-bakso,Light Punch,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/intel-bakso/indofight_char_intel-bakso_light_punch_sheet.png,,,todo,
+intel-bakso_heavy_punch,animasi,intel-bakso,Heavy Punch,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/intel-bakso/indofight_char_intel-bakso_heavy_punch_sheet.png,,,todo,
+intel-bakso_light_kick,animasi,intel-bakso,Light Kick,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/intel-bakso/indofight_char_intel-bakso_light_kick_sheet.png,,,todo,
+intel-bakso_heavy_kick,animasi,intel-bakso,Heavy Kick,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/intel-bakso/indofight_char_intel-bakso_heavy_kick_sheet.png,,,todo,
+intel-bakso_block,animasi,intel-bakso,Block,160x160/frame,2,tidak,SpriteCook animate_game_art + Aseprite,art/characters/intel-bakso/indofight_char_intel-bakso_block_sheet.png,,,todo,
+intel-bakso_hit,animasi,intel-bakso,Hit,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/intel-bakso/indofight_char_intel-bakso_hit_sheet.png,,,todo,
+intel-bakso_knockup,animasi,intel-bakso,Knockup,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/intel-bakso/indofight_char_intel-bakso_knockup_sheet.png,,,todo,
+intel-bakso_knockdown,animasi,intel-bakso,Knockdown,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/intel-bakso/indofight_char_intel-bakso_knockdown_sheet.png,,,todo,
+intel-bakso_special,animasi,intel-bakso,Special Skill,160x160/frame,8,tidak,SpriteCook animate_game_art + Aseprite,art/characters/intel-bakso/indofight_char_intel-bakso_special_sheet.png,,,todo,
+intel-bakso_ultimate_cast,animasi,intel-bakso,Ultimate Cast,160x160/frame,10,tidak,SpriteCook animate_game_art + Aseprite,art/characters/intel-bakso/indofight_char_intel-bakso_ultimate_cast_sheet.png,,,todo,
+intel-bakso_defeat,animasi,intel-bakso,Defeat,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/intel-bakso/indofight_char_intel-bakso_defeat_sheet.png,,,todo,
+intel-bakso_victory,animasi,intel-bakso,Victory,160x160/frame,8,ya,SpriteCook animate_game_art + Aseprite,art/characters/intel-bakso/indofight_char_intel-bakso_victory_sheet.png,,,todo,
+intel-bakso_taunt,animasi,intel-bakso,Taunt,160x160/frame,6,ya,SpriteCook animate_game_art + Aseprite,art/characters/intel-bakso/indofight_char_intel-bakso_taunt_sheet.png,,,todo,
+intel-bakso_soup_splash,properti,intel-bakso,Cipratan kuah panas (VFX),48x32,6,,SpriteCook,art/characters/intel-bakso/props/indofight_char_intel-bakso_soup_splash.png,,,todo,
+intel-bakso_chili_spray,properti,intel-bakso,Semburan kuah sambal (proyektil),64x32,6,,SpriteCook,art/characters/intel-bakso/props/indofight_char_intel-bakso_chili_spray.png,,,todo,
+intel-bakso_sniper_laser,properti,intel-bakso,Laser sniper merah,128x8,2,,SpriteCook,art/characters/intel-bakso/props/indofight_char_intel-bakso_sniper_laser.png,,,todo,
+intel-bakso_muzzle_flash,properti,intel-bakso,Kilatan tembakan dari luar layar,32x32,4,,SpriteCook,art/characters/intel-bakso/props/indofight_char_intel-bakso_muzzle_flash.png,,,todo,
+kuli-jawa_base,karakter,kuli-jawa,Gambar dasar canonical,160x160,1,,SpriteCook generate_game_art + Aseprite,art/characters/kuli-jawa/indofight_char_kuli-jawa_base.png,,,todo,
+kuli-jawa_splash,karakter,kuli-jawa,Splash art,270x480,1,,SpriteCook + upscale 4x,art/characters/kuli-jawa/indofight_char_kuli-jawa_splash.png,,,todo,
+kuli-jawa_icon,karakter,kuli-jawa,Ikon grid,64x64,1,,SpriteCook + upscale 4x,art/characters/kuli-jawa/indofight_char_kuli-jawa_icon.png,,,todo,
+kuli-jawa_icon_hud,karakter,kuli-jawa,Ikon HUD,32x32,1,,Aseprite (dari ikon grid),art/characters/kuli-jawa/indofight_char_kuli-jawa_iconhud.png,,,todo,
+kuli-jawa_idle,animasi,kuli-jawa,Idle,160x160/frame,6,ya,SpriteCook animate_game_art + Aseprite,art/characters/kuli-jawa/indofight_char_kuli-jawa_idle_sheet.png,,,todo,
+kuli-jawa_walk_forward,animasi,kuli-jawa,Walk Forward,160x160/frame,8,ya,SpriteCook animate_game_art + Aseprite,art/characters/kuli-jawa/indofight_char_kuli-jawa_walk_forward_sheet.png,,,todo,Walk Backward memakai sheet ini diputar terbalik di engine
+kuli-jawa_dash,animasi,kuli-jawa,Dash / Step,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/kuli-jawa/indofight_char_kuli-jawa_dash_sheet.png,,,todo,
+kuli-jawa_jump,animasi,kuli-jawa,Jump,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/kuli-jawa/indofight_char_kuli-jawa_jump_sheet.png,,,todo,
+kuli-jawa_crouch,animasi,kuli-jawa,Crouch,160x160/frame,2,tidak,SpriteCook animate_game_art + Aseprite,art/characters/kuli-jawa/indofight_char_kuli-jawa_crouch_sheet.png,,,todo,
+kuli-jawa_light_punch,animasi,kuli-jawa,Light Punch,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/kuli-jawa/indofight_char_kuli-jawa_light_punch_sheet.png,,,todo,
+kuli-jawa_heavy_punch,animasi,kuli-jawa,Heavy Punch,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/kuli-jawa/indofight_char_kuli-jawa_heavy_punch_sheet.png,,,todo,
+kuli-jawa_light_kick,animasi,kuli-jawa,Light Kick,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/kuli-jawa/indofight_char_kuli-jawa_light_kick_sheet.png,,,todo,
+kuli-jawa_heavy_kick,animasi,kuli-jawa,Heavy Kick,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/kuli-jawa/indofight_char_kuli-jawa_heavy_kick_sheet.png,,,todo,
+kuli-jawa_block,animasi,kuli-jawa,Block,160x160/frame,2,tidak,SpriteCook animate_game_art + Aseprite,art/characters/kuli-jawa/indofight_char_kuli-jawa_block_sheet.png,,,todo,
+kuli-jawa_hit,animasi,kuli-jawa,Hit,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/kuli-jawa/indofight_char_kuli-jawa_hit_sheet.png,,,todo,
+kuli-jawa_knockup,animasi,kuli-jawa,Knockup,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/kuli-jawa/indofight_char_kuli-jawa_knockup_sheet.png,,,todo,
+kuli-jawa_knockdown,animasi,kuli-jawa,Knockdown,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/kuli-jawa/indofight_char_kuli-jawa_knockdown_sheet.png,,,todo,
+kuli-jawa_special,animasi,kuli-jawa,Special Skill,160x160/frame,8,tidak,SpriteCook animate_game_art + Aseprite,art/characters/kuli-jawa/indofight_char_kuli-jawa_special_sheet.png,,,todo,
+kuli-jawa_ultimate_cast,animasi,kuli-jawa,Ultimate Cast,160x160/frame,10,tidak,SpriteCook animate_game_art + Aseprite,art/characters/kuli-jawa/indofight_char_kuli-jawa_ultimate_cast_sheet.png,,,todo,
+kuli-jawa_defeat,animasi,kuli-jawa,Defeat,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/kuli-jawa/indofight_char_kuli-jawa_defeat_sheet.png,,,todo,
+kuli-jawa_victory,animasi,kuli-jawa,Victory,160x160/frame,8,ya,SpriteCook animate_game_art + Aseprite,art/characters/kuli-jawa/indofight_char_kuli-jawa_victory_sheet.png,,,todo,
+kuli-jawa_taunt,animasi,kuli-jawa,Taunt,160x160/frame,6,ya,SpriteCook animate_game_art + Aseprite,art/characters/kuli-jawa/indofight_char_kuli-jawa_taunt_sheet.png,,,todo,
+kuli-jawa_coffee_steam,properti,kuli-jawa,Uap kopi (VFX),16x24,6,,SpriteCook,art/characters/kuli-jawa/props/indofight_char_kuli-jawa_coffee_steam.png,,,todo,
+kuli-jawa_buff_aura,properti,kuli-jawa,Aura buff (VFX),48x64,6,,SpriteCook,art/characters/kuli-jawa/props/indofight_char_kuli-jawa_buff_aura.png,,,todo,
+kuli-jawa_brick_wall,properti,kuli-jawa,Tembok bata (aset ultimate),64x96,6,,SpriteCook,art/characters/kuli-jawa/props/indofight_char_kuli-jawa_brick_wall.png,,,todo,
+kuli-jawa_dust_cloud,properti,kuli-jawa,Debu roboh,64x32,6,,SpriteCook,art/characters/kuli-jawa/props/indofight_char_kuli-jawa_dust_cloud.png,,,todo,
+abang-ojol_base,karakter,abang-ojol,Gambar dasar canonical,160x160,1,,SpriteCook generate_game_art (gpt-image-2 low) + tools/pixelize_base.py,art/characters/abang-ojol/indofight_char_abang-ojol_base.png,ya,1f14ec80-f6f1-4c68-a9b6-cbd21cb077bb,review,"Tiga perempat menghadap kanan, pose A (keputusan 8, 12, 13). Menunggu persetujuan Jeje"
+abang-ojol_splash,karakter,abang-ojol,Splash art,270x480,1,,SpriteCook + upscale 4x,art/characters/abang-ojol/indofight_char_abang-ojol_splash.png,ya,,todo,Tidak digenerate (keputusan 8). Layar pilih dan versus memakai gambar dasar
+abang-ojol_icon,karakter,abang-ojol,Ikon grid,64x64,1,,SpriteCook + upscale 4x,art/characters/abang-ojol/indofight_char_abang-ojol_icon.png,ya,,todo,Tidak digenerate (keputusan 8). Layar pilih dan versus memakai gambar dasar
+abang-ojol_icon_hud,karakter,abang-ojol,Ikon HUD,32x32,1,,Aseprite (dari ikon grid),art/characters/abang-ojol/indofight_char_abang-ojol_iconhud.png,ya,,todo,Tidak digenerate (keputusan 8). Layar pilih dan versus memakai gambar dasar
+abang-ojol_idle,animasi,abang-ojol,Idle,160x160/frame,6,ya,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/abang-ojol/abang_ojol_rig.tscn,ya,,review,"Animasi 'idle' di AnimationPlayer rig (keputusan 9, 15)"
+abang-ojol_walk_forward,animasi,abang-ojol,Walk Forward,160x160/frame,8,ya,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/abang-ojol/abang_ojol_rig.tscn,ya,,review,"Animasi 'walk' di AnimationPlayer rig (keputusan 9, 15)"
+abang-ojol_dash,animasi,abang-ojol,Dash / Step,160x160/frame,4,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/abang-ojol/abang_ojol_rig.tscn,ya,,review,"Animasi 'dash dan backdash' di AnimationPlayer rig (keputusan 9, 15)"
+abang-ojol_jump,animasi,abang-ojol,Jump,160x160/frame,6,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/abang-ojol/abang_ojol_rig.tscn,ya,,review,"Animasi 'jump' di AnimationPlayer rig (keputusan 9, 15)"
+abang-ojol_crouch,animasi,abang-ojol,Crouch,160x160/frame,2,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/abang-ojol/abang_ojol_rig.tscn,ya,,review,"Animasi 'crouch' di AnimationPlayer rig (keputusan 9, 15)"
+abang-ojol_light_punch,animasi,abang-ojol,Light Punch,160x160/frame,4,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/abang-ojol/abang_ojol_rig.tscn,ya,,review,"Animasi 'lp' di AnimationPlayer rig (keputusan 9, 15)"
+abang-ojol_heavy_punch,animasi,abang-ojol,Heavy Punch,160x160/frame,6,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/abang-ojol/abang_ojol_rig.tscn,ya,,review,"Animasi 'hp' di AnimationPlayer rig (keputusan 9, 15)"
+abang-ojol_light_kick,animasi,abang-ojol,Light Kick,160x160/frame,4,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/abang-ojol/abang_ojol_rig.tscn,ya,,review,"Animasi 'lk' di AnimationPlayer rig (keputusan 9, 15)"
+abang-ojol_heavy_kick,animasi,abang-ojol,Heavy Kick,160x160/frame,6,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/abang-ojol/abang_ojol_rig.tscn,ya,,review,"Animasi 'hk' di AnimationPlayer rig (keputusan 9, 15)"
+abang-ojol_block,animasi,abang-ojol,Block,160x160/frame,2,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/abang-ojol/abang_ojol_rig.tscn,ya,,review,"Animasi 'block' di AnimationPlayer rig (keputusan 9, 15)"
+abang-ojol_hit,animasi,abang-ojol,Hit,160x160/frame,4,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/abang-ojol/abang_ojol_rig.tscn,ya,,review,"Animasi 'hit' di AnimationPlayer rig (keputusan 9, 15)"
+abang-ojol_knockup,animasi,abang-ojol,Knockup,160x160/frame,4,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/abang-ojol/abang_ojol_rig.tscn,ya,,review,"Animasi 'ko (0 sampai 0,3)' di AnimationPlayer rig (keputusan 9, 15)"
+abang-ojol_knockdown,animasi,abang-ojol,Knockdown,160x160/frame,6,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/abang-ojol/abang_ojol_rig.tscn,ya,,review,"Animasi 'ko' (jatuh) dan 'getup' (bangun) di AnimationPlayer rig (keputusan 9, 15, 25)"
+abang-ojol_special,animasi,abang-ojol,Special Skill,160x160/frame,8,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/abang-ojol/abang_ojol_rig.tscn,ya,,review,"Animasi 'skill' di AnimationPlayer rig (keputusan 9, 15)"
+abang-ojol_ultimate_cast,animasi,abang-ojol,Ultimate Cast,160x160/frame,10,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/abang-ojol/abang_ojol_rig.tscn,ya,,review,"Animasi 'ultimate' di AnimationPlayer rig (keputusan 9, 15)"
+abang-ojol_defeat,animasi,abang-ojol,Defeat,160x160/frame,6,tidak,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/abang-ojol/abang_ojol_rig.tscn,ya,,review,"Animasi 'defeat' di AnimationPlayer rig (keputusan 9, 15)"
+abang-ojol_victory,animasi,abang-ojol,Victory,160x160/frame,8,ya,"Godot Skeleton2D + AnimationPlayer (tools/cut_parts.py, game/tools/build_rigs.gd)",game/characters/abang-ojol/abang_ojol_rig.tscn,ya,,review,"Animasi 'win' di AnimationPlayer rig (keputusan 9, 15)"
+abang-ojol_taunt,animasi,abang-ojol,Taunt,160x160/frame,6,ya,SpriteCook animate_game_art + Aseprite,art/characters/abang-ojol/indofight_char_abang-ojol_taunt_sheet.png,ya,,todo,Belum dibuat. Tidak termasuk daftar animasi keputusan 9 dan 15
+abang-ojol_afterimage,properti,abang-ojol,Bayangan digital Cancel Order (VFX),64x112,6,,Kode (game/scripts/fight_view.gd),game/scripts/fight_view.gd,ya,,review,Digambar dengan kode (keputusan 10)
+abang-ojol_motor_bebek,properti,abang-ojol,Motor bebek (aset ultimate),96x64,4,,Blender (tools/blender/render_props.py),art/characters/abang-ojol/props/indofight_char_abang-ojol_motor_bebek.png,ya,,review,Render Blender lalu tools/pack_props.py (keputusan 23). Palet abang-ojol. Salinan game: game/props/motor.png
+abang-ojol_star5_notif,properti,abang-ojol,Notifikasi Bintang 5,64x24,6,,Kode (game/scripts/fight_view.gd),game/scripts/fight_view.gd,ya,,review,Digambar dengan kode (keputusan 10)
+dukun-santet_base,karakter,dukun-santet,Gambar dasar canonical,160x160,1,,SpriteCook generate_game_art + Aseprite,art/characters/dukun-santet/indofight_char_dukun-santet_base.png,,,todo,
+dukun-santet_splash,karakter,dukun-santet,Splash art,270x480,1,,SpriteCook + upscale 4x,art/characters/dukun-santet/indofight_char_dukun-santet_splash.png,,,todo,
+dukun-santet_icon,karakter,dukun-santet,Ikon grid,64x64,1,,SpriteCook + upscale 4x,art/characters/dukun-santet/indofight_char_dukun-santet_icon.png,,,todo,
+dukun-santet_icon_hud,karakter,dukun-santet,Ikon HUD,32x32,1,,Aseprite (dari ikon grid),art/characters/dukun-santet/indofight_char_dukun-santet_iconhud.png,,,todo,
+dukun-santet_idle,animasi,dukun-santet,Idle,160x160/frame,6,ya,SpriteCook animate_game_art + Aseprite,art/characters/dukun-santet/indofight_char_dukun-santet_idle_sheet.png,,,todo,
+dukun-santet_walk_forward,animasi,dukun-santet,Walk Forward,160x160/frame,8,ya,SpriteCook animate_game_art + Aseprite,art/characters/dukun-santet/indofight_char_dukun-santet_walk_forward_sheet.png,,,todo,Walk Backward memakai sheet ini diputar terbalik di engine
+dukun-santet_dash,animasi,dukun-santet,Dash / Step,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/dukun-santet/indofight_char_dukun-santet_dash_sheet.png,,,todo,
+dukun-santet_jump,animasi,dukun-santet,Jump,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/dukun-santet/indofight_char_dukun-santet_jump_sheet.png,,,todo,
+dukun-santet_crouch,animasi,dukun-santet,Crouch,160x160/frame,2,tidak,SpriteCook animate_game_art + Aseprite,art/characters/dukun-santet/indofight_char_dukun-santet_crouch_sheet.png,,,todo,
+dukun-santet_light_punch,animasi,dukun-santet,Light Punch,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/dukun-santet/indofight_char_dukun-santet_light_punch_sheet.png,,,todo,
+dukun-santet_heavy_punch,animasi,dukun-santet,Heavy Punch,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/dukun-santet/indofight_char_dukun-santet_heavy_punch_sheet.png,,,todo,
+dukun-santet_light_kick,animasi,dukun-santet,Light Kick,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/dukun-santet/indofight_char_dukun-santet_light_kick_sheet.png,,,todo,
+dukun-santet_heavy_kick,animasi,dukun-santet,Heavy Kick,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/dukun-santet/indofight_char_dukun-santet_heavy_kick_sheet.png,,,todo,
+dukun-santet_block,animasi,dukun-santet,Block,160x160/frame,2,tidak,SpriteCook animate_game_art + Aseprite,art/characters/dukun-santet/indofight_char_dukun-santet_block_sheet.png,,,todo,
+dukun-santet_hit,animasi,dukun-santet,Hit,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/dukun-santet/indofight_char_dukun-santet_hit_sheet.png,,,todo,
+dukun-santet_knockup,animasi,dukun-santet,Knockup,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/dukun-santet/indofight_char_dukun-santet_knockup_sheet.png,,,todo,
+dukun-santet_knockdown,animasi,dukun-santet,Knockdown,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/dukun-santet/indofight_char_dukun-santet_knockdown_sheet.png,,,todo,
+dukun-santet_special,animasi,dukun-santet,Special Skill,160x160/frame,8,tidak,SpriteCook animate_game_art + Aseprite,art/characters/dukun-santet/indofight_char_dukun-santet_special_sheet.png,,,todo,
+dukun-santet_ultimate_cast,animasi,dukun-santet,Ultimate Cast,160x160/frame,10,tidak,SpriteCook animate_game_art + Aseprite,art/characters/dukun-santet/indofight_char_dukun-santet_ultimate_cast_sheet.png,,,todo,
+dukun-santet_defeat,animasi,dukun-santet,Defeat,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/dukun-santet/indofight_char_dukun-santet_defeat_sheet.png,,,todo,
+dukun-santet_victory,animasi,dukun-santet,Victory,160x160/frame,8,ya,SpriteCook animate_game_art + Aseprite,art/characters/dukun-santet/indofight_char_dukun-santet_victory_sheet.png,,,todo,
+dukun-santet_taunt,animasi,dukun-santet,Taunt,160x160/frame,6,ya,SpriteCook animate_game_art + Aseprite,art/characters/dukun-santet/indofight_char_dukun-santet_taunt_sheet.png,,,todo,
+dukun-santet_purple_orb,properti,dukun-santet,Bola energi ungu (proyektil basic),24x24,6,,SpriteCook,art/characters/dukun-santet/props/indofight_char_dukun-santet_purple_orb.png,,,todo,
+dukun-santet_incense_cloud,properti,dukun-santet,Awan asap kemenyan,96x48,8,,SpriteCook,art/characters/dukun-santet/props/indofight_char_dukun-santet_incense_cloud.png,,,todo,
+dukun-santet_black_nail,properti,dukun-santet,Paku hitam (proyektil ultimate),16x8,2,,SpriteCook,art/characters/dukun-santet/props/indofight_char_dukun-santet_black_nail.png,,,todo,
+dukun-santet_red_flash,properti,dukun-santet,Layar berkedip merah,32x32,2,,SpriteCook,art/characters/dukun-santet/props/indofight_char_dukun-santet_red_flash.png,,,todo,
+pocong-brawler_base,karakter,pocong-brawler,Gambar dasar canonical,160x160,1,,SpriteCook generate_game_art + Aseprite,art/characters/pocong-brawler/indofight_char_pocong-brawler_base.png,,,todo,
+pocong-brawler_splash,karakter,pocong-brawler,Splash art,270x480,1,,SpriteCook + upscale 4x,art/characters/pocong-brawler/indofight_char_pocong-brawler_splash.png,,,todo,
+pocong-brawler_icon,karakter,pocong-brawler,Ikon grid,64x64,1,,SpriteCook + upscale 4x,art/characters/pocong-brawler/indofight_char_pocong-brawler_icon.png,,,todo,
+pocong-brawler_icon_hud,karakter,pocong-brawler,Ikon HUD,32x32,1,,Aseprite (dari ikon grid),art/characters/pocong-brawler/indofight_char_pocong-brawler_iconhud.png,,,todo,
+pocong-brawler_idle,animasi,pocong-brawler,Idle,160x160/frame,6,ya,SpriteCook animate_game_art + Aseprite,art/characters/pocong-brawler/indofight_char_pocong-brawler_idle_sheet.png,,,todo,
+pocong-brawler_walk_forward,animasi,pocong-brawler,Walk Forward,160x160/frame,8,ya,SpriteCook animate_game_art + Aseprite,art/characters/pocong-brawler/indofight_char_pocong-brawler_walk_forward_sheet.png,,,todo,Walk Backward memakai sheet ini diputar terbalik di engine
+pocong-brawler_dash,animasi,pocong-brawler,Dash / Step,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/pocong-brawler/indofight_char_pocong-brawler_dash_sheet.png,,,todo,
+pocong-brawler_jump,animasi,pocong-brawler,Jump,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/pocong-brawler/indofight_char_pocong-brawler_jump_sheet.png,,,todo,
+pocong-brawler_crouch,animasi,pocong-brawler,Crouch,160x160/frame,2,tidak,SpriteCook animate_game_art + Aseprite,art/characters/pocong-brawler/indofight_char_pocong-brawler_crouch_sheet.png,,,todo,
+pocong-brawler_light_punch,animasi,pocong-brawler,Light Punch,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/pocong-brawler/indofight_char_pocong-brawler_light_punch_sheet.png,,,todo,
+pocong-brawler_heavy_punch,animasi,pocong-brawler,Heavy Punch,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/pocong-brawler/indofight_char_pocong-brawler_heavy_punch_sheet.png,,,todo,
+pocong-brawler_light_kick,animasi,pocong-brawler,Light Kick,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/pocong-brawler/indofight_char_pocong-brawler_light_kick_sheet.png,,,todo,
+pocong-brawler_heavy_kick,animasi,pocong-brawler,Heavy Kick,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/pocong-brawler/indofight_char_pocong-brawler_heavy_kick_sheet.png,,,todo,
+pocong-brawler_block,animasi,pocong-brawler,Block,160x160/frame,2,tidak,SpriteCook animate_game_art + Aseprite,art/characters/pocong-brawler/indofight_char_pocong-brawler_block_sheet.png,,,todo,
+pocong-brawler_hit,animasi,pocong-brawler,Hit,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/pocong-brawler/indofight_char_pocong-brawler_hit_sheet.png,,,todo,
+pocong-brawler_knockup,animasi,pocong-brawler,Knockup,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/pocong-brawler/indofight_char_pocong-brawler_knockup_sheet.png,,,todo,
+pocong-brawler_knockdown,animasi,pocong-brawler,Knockdown,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/pocong-brawler/indofight_char_pocong-brawler_knockdown_sheet.png,,,todo,
+pocong-brawler_special,animasi,pocong-brawler,Special Skill,160x160/frame,8,tidak,SpriteCook animate_game_art + Aseprite,art/characters/pocong-brawler/indofight_char_pocong-brawler_special_sheet.png,,,todo,
+pocong-brawler_ultimate_cast,animasi,pocong-brawler,Ultimate Cast,160x160/frame,10,tidak,SpriteCook animate_game_art + Aseprite,art/characters/pocong-brawler/indofight_char_pocong-brawler_ultimate_cast_sheet.png,,,todo,
+pocong-brawler_defeat,animasi,pocong-brawler,Defeat,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/pocong-brawler/indofight_char_pocong-brawler_defeat_sheet.png,,,todo,
+pocong-brawler_victory,animasi,pocong-brawler,Victory,160x160/frame,8,ya,SpriteCook animate_game_art + Aseprite,art/characters/pocong-brawler/indofight_char_pocong-brawler_victory_sheet.png,,,todo,
+pocong-brawler_taunt,animasi,pocong-brawler,Taunt,160x160/frame,6,ya,SpriteCook animate_game_art + Aseprite,art/characters/pocong-brawler/indofight_char_pocong-brawler_taunt_sheet.png,,,todo,
+pocong-brawler_ground_hole,properti,pocong-brawler,Lubang tanah Earth Dive,48x16,6,,SpriteCook,art/characters/pocong-brawler/props/indofight_char_pocong-brawler_ground_hole.png,,,todo,
+pocong-brawler_jumpscare_face,properti,pocong-brawler,Wajah pocong layar penuh (ultimate),240x135,4,,SpriteCook,art/characters/pocong-brawler/props/indofight_char_pocong-brawler_jumpscare_face.png,,,todo,
+pocong-brawler_lifesteal,properti,pocong-brawler,Efek HP terserap,48x48,6,,SpriteCook,art/characters/pocong-brawler/props/indofight_char_pocong-brawler_lifesteal.png,,,todo,
+bocah-warnet_base,karakter,bocah-warnet,Gambar dasar canonical,160x160,1,,SpriteCook generate_game_art + Aseprite,art/characters/bocah-warnet/indofight_char_bocah-warnet_base.png,,,todo,
+bocah-warnet_splash,karakter,bocah-warnet,Splash art,270x480,1,,SpriteCook + upscale 4x,art/characters/bocah-warnet/indofight_char_bocah-warnet_splash.png,,,todo,
+bocah-warnet_icon,karakter,bocah-warnet,Ikon grid,64x64,1,,SpriteCook + upscale 4x,art/characters/bocah-warnet/indofight_char_bocah-warnet_icon.png,,,todo,
+bocah-warnet_icon_hud,karakter,bocah-warnet,Ikon HUD,32x32,1,,Aseprite (dari ikon grid),art/characters/bocah-warnet/indofight_char_bocah-warnet_iconhud.png,,,todo,
+bocah-warnet_idle,animasi,bocah-warnet,Idle,160x160/frame,6,ya,SpriteCook animate_game_art + Aseprite,art/characters/bocah-warnet/indofight_char_bocah-warnet_idle_sheet.png,,,todo,
+bocah-warnet_walk_forward,animasi,bocah-warnet,Walk Forward,160x160/frame,8,ya,SpriteCook animate_game_art + Aseprite,art/characters/bocah-warnet/indofight_char_bocah-warnet_walk_forward_sheet.png,,,todo,Walk Backward memakai sheet ini diputar terbalik di engine
+bocah-warnet_dash,animasi,bocah-warnet,Dash / Step,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/bocah-warnet/indofight_char_bocah-warnet_dash_sheet.png,,,todo,
+bocah-warnet_jump,animasi,bocah-warnet,Jump,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/bocah-warnet/indofight_char_bocah-warnet_jump_sheet.png,,,todo,
+bocah-warnet_crouch,animasi,bocah-warnet,Crouch,160x160/frame,2,tidak,SpriteCook animate_game_art + Aseprite,art/characters/bocah-warnet/indofight_char_bocah-warnet_crouch_sheet.png,,,todo,
+bocah-warnet_light_punch,animasi,bocah-warnet,Light Punch,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/bocah-warnet/indofight_char_bocah-warnet_light_punch_sheet.png,,,todo,
+bocah-warnet_heavy_punch,animasi,bocah-warnet,Heavy Punch,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/bocah-warnet/indofight_char_bocah-warnet_heavy_punch_sheet.png,,,todo,
+bocah-warnet_light_kick,animasi,bocah-warnet,Light Kick,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/bocah-warnet/indofight_char_bocah-warnet_light_kick_sheet.png,,,todo,
+bocah-warnet_heavy_kick,animasi,bocah-warnet,Heavy Kick,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/bocah-warnet/indofight_char_bocah-warnet_heavy_kick_sheet.png,,,todo,
+bocah-warnet_block,animasi,bocah-warnet,Block,160x160/frame,2,tidak,SpriteCook animate_game_art + Aseprite,art/characters/bocah-warnet/indofight_char_bocah-warnet_block_sheet.png,,,todo,
+bocah-warnet_hit,animasi,bocah-warnet,Hit,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/bocah-warnet/indofight_char_bocah-warnet_hit_sheet.png,,,todo,
+bocah-warnet_knockup,animasi,bocah-warnet,Knockup,160x160/frame,4,tidak,SpriteCook animate_game_art + Aseprite,art/characters/bocah-warnet/indofight_char_bocah-warnet_knockup_sheet.png,,,todo,
+bocah-warnet_knockdown,animasi,bocah-warnet,Knockdown,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/bocah-warnet/indofight_char_bocah-warnet_knockdown_sheet.png,,,todo,
+bocah-warnet_special,animasi,bocah-warnet,Special Skill,160x160/frame,8,tidak,SpriteCook animate_game_art + Aseprite,art/characters/bocah-warnet/indofight_char_bocah-warnet_special_sheet.png,,,todo,
+bocah-warnet_ultimate_cast,animasi,bocah-warnet,Ultimate Cast,160x160/frame,10,tidak,SpriteCook animate_game_art + Aseprite,art/characters/bocah-warnet/indofight_char_bocah-warnet_ultimate_cast_sheet.png,,,todo,
+bocah-warnet_defeat,animasi,bocah-warnet,Defeat,160x160/frame,6,tidak,SpriteCook animate_game_art + Aseprite,art/characters/bocah-warnet/indofight_char_bocah-warnet_defeat_sheet.png,,,todo,
+bocah-warnet_victory,animasi,bocah-warnet,Victory,160x160/frame,8,ya,SpriteCook animate_game_art + Aseprite,art/characters/bocah-warnet/indofight_char_bocah-warnet_victory_sheet.png,,,todo,
+bocah-warnet_taunt,animasi,bocah-warnet,Taunt,160x160/frame,6,ya,SpriteCook animate_game_art + Aseprite,art/characters/bocah-warnet/indofight_char_bocah-warnet_taunt_sheet.png,,,todo,
+bocah-warnet_mouse_yoyo,properti,bocah-warnet,Mouse gaming bertali,16x16,4,,SpriteCook,art/characters/bocah-warnet/props/indofight_char_bocah-warnet_mouse_yoyo.png,,,todo,
+bocah-warnet_toxic_bubble,properti,bocah-warnet,Balon teks @#$%! (proyektil homing),32x24,6,,SpriteCook,art/characters/bocah-warnet/props/indofight_char_bocah-warnet_toxic_bubble.png,,,todo,
+bocah-warnet_glitch_overlay,properti,bocah-warnet,Layar gelap glitch (ultimate),240x135,6,,SpriteCook,art/characters/bocah-warnet/props/indofight_char_bocah-warnet_glitch_overlay.png,,,todo,
+bocah-warnet_ggwp_text,properti,bocah-warnet,Teks GGWP,64x24,4,,SpriteCook,art/characters/bocah-warnet/props/indofight_char_bocah-warnet_ggwp_text.png,,,todo,
+stage_dpr_sky,stage,dpr,Skybox,512x288,1,,SpriteCook + Aseprite,art/stages/dpr/indofight_stage_dpr_sky.png,,,todo,
+stage_dpr_bg,stage,dpr,Background,720x270,1,,SpriteCook + Aseprite,art/stages/dpr/indofight_stage_dpr_bg.png,,,todo,
+stage_dpr_floor,stage,dpr,Midground lantai (tile),64x48,1,,SpriteCook + Aseprite,art/stages/dpr/indofight_stage_dpr_floor.png,,,todo,
+stage_dpr_floor_decals,stage,dpr,Midground hiasan lantai,160x48,1,,SpriteCook + Aseprite,art/stages/dpr/indofight_stage_dpr_floor_decals.png,,,todo,
+stage_dpr_smoke_tyre,stage,dpr,Asap ban (animasi),32x64,8,ya,SpriteCook + Aseprite,art/stages/dpr/indofight_stage_dpr_smoke_tyre.png,,,todo,
+stage_dpr_fg_wire,stage,dpr,Foreground kawat berduri (tile),96x48,1,,SpriteCook + Aseprite,art/stages/dpr/indofight_stage_dpr_fg_wire.png,,,todo,
+stage_dpr_fg_barrier,stage,dpr,Foreground barikade beton,96x48,1,,SpriteCook + Aseprite,art/stages/dpr/indofight_stage_dpr_fg_barrier.png,,,todo,
+stage_istana_wall,stage,istana,Dinding belakang (pengganti skybox),512x288,1,,SpriteCook + Aseprite,art/stages/istana/indofight_stage_istana_wall.png,,,todo,
+stage_istana_bg,stage,istana,Background,720x270,1,,SpriteCook + Aseprite,art/stages/istana/indofight_stage_istana_bg.png,,,todo,
+stage_istana_floor,stage,istana,Midground lantai (tile),64x48,1,,SpriteCook + Aseprite,art/stages/istana/indofight_stage_istana_floor.png,,,todo,
+stage_istana_guard_blink,stage,istana,Penjaga berkedip (animasi),32x80,4,ya,SpriteCook + Aseprite,art/stages/istana/indofight_stage_istana_guard_blink.png,,,todo,
+stage_istana_fg_pillar,stage,istana,Foreground pilar marmer,64x270,1,,SpriteCook + Aseprite,art/stages/istana/indofight_stage_istana_fg_pillar.png,,,todo,
+stage_prambanan_sky,stage,prambanan,Skybox,512x288,1,,SpriteCook + Aseprite,art/stages/prambanan/indofight_stage_prambanan_sky.png,,,todo,
+stage_prambanan_bg,stage,prambanan,Background,720x270,1,,SpriteCook + Aseprite,art/stages/prambanan/indofight_stage_prambanan_bg.png,,,todo,
+stage_prambanan_lightning,stage,prambanan,Kilat petir (animasi),64x160,4,ya,SpriteCook + Aseprite,art/stages/prambanan/indofight_stage_prambanan_lightning.png,,,todo,
+stage_prambanan_floor,stage,prambanan,Midground lantai (tile),64x48,1,,SpriteCook + Aseprite,art/stages/prambanan/indofight_stage_prambanan_floor.png,,,todo,
+stage_prambanan_fg_grass,stage,prambanan,Foreground rumput gelap (tile),96x40,1,,SpriteCook + Aseprite,art/stages/prambanan/indofight_stage_prambanan_fg_grass.png,,,todo,
+stage_prambanan_fg_torch,stage,prambanan,Foreground obor (animasi),24x72,6,ya,SpriteCook + Aseprite,art/stages/prambanan/indofight_stage_prambanan_fg_torch.png,,,todo,
+stage_gang_sky,stage,gang,Skybox,512x288,1,,SpriteCook + Aseprite,art/stages/gang/indofight_stage_gang_sky.png,ya,,todo,Tidak dibuat: stage memakai satu gambar (keputusan 14)
+stage_gang_bg,stage,gang,Background,720x226,1,,SpriteCook generate_game_art (gpt-image-2 medium) + tools/pixelize_stage.py,art/stages/gang/indofight_stage_gang_bg.png,ya,8d82f7d9-cb16-45f8-ad75-8885c8922bed,review,Satu gambar 503 lebar disambung dengan cerminannya (keputusan 14). Langit menyatu di layer ini. Menunggu persetujuan Jeje
+stage_gang_lamp_flicker,stage,gang,Lampu jalan berkedip (animasi),24x48,4,ya,SpriteCook + Aseprite,art/stages/gang/indofight_stage_gang_lamp_flicker.png,ya,,todo,Tidak dibuat: stage memakai satu gambar (keputusan 14)
+stage_gang_floor,stage,gang,Midground lantai (strip utuh),960x44,1,,Potongan bawah gambar stage (tools/pixelize_stage.py),art/stages/gang/indofight_stage_gang_floor.png,ya,8d82f7d9-cb16-45f8-ad75-8885c8922bed,review,"Strip jalan dari gambar yang sama, bukan tile 64x48 (keputusan 14)"
+stage_gang_fg_cart,stage,gang,Foreground gerobak bakso,112x80,1,,SpriteCook + Aseprite,art/stages/gang/indofight_stage_gang_fg_cart.png,ya,,todo,Tidak dibuat: stage memakai satu gambar (keputusan 14)
+stage_gang_fg_laundry,stage,gang,Foreground jemuran (animasi),128x64,6,ya,SpriteCook + Aseprite,art/stages/gang/indofight_stage_gang_fg_laundry.png,ya,,todo,Tidak dibuat: stage memakai satu gambar (keputusan 14)
+stage_proyek_sky,stage,proyek,Skybox,512x288,1,,SpriteCook + Aseprite,art/stages/proyek/indofight_stage_proyek_sky.png,,,todo,
+stage_proyek_bg,stage,proyek,Background,720x270,1,,SpriteCook + Aseprite,art/stages/proyek/indofight_stage_proyek_bg.png,,,todo,
+stage_proyek_tarp,stage,proyek,Terpal berkibar (animasi),48x64,6,ya,SpriteCook + Aseprite,art/stages/proyek/indofight_stage_proyek_tarp.png,,,todo,
+stage_proyek_floor,stage,proyek,Midground lantai (tile),64x48,1,,SpriteCook + Aseprite,art/stages/proyek/indofight_stage_proyek_floor.png,,,todo,
+stage_proyek_fg_pipes,stage,proyek,Foreground pipa dan sak semen,128x64,1,,SpriteCook + Aseprite,art/stages/proyek/indofight_stage_proyek_fg_pipes.png,,,todo,
+stage_warnet_wall,stage,warnet,Dinding belakang (pengganti skybox),512x288,1,,SpriteCook + Aseprite,art/stages/warnet/indofight_stage_warnet_wall.png,,,todo,
+stage_warnet_bg,stage,warnet,Background,720x270,1,,SpriteCook + Aseprite,art/stages/warnet/indofight_stage_warnet_bg.png,,,todo,
+stage_warnet_screen_flicker,stage,warnet,Layar PC berkedip (animasi),32x24,4,ya,SpriteCook + Aseprite,art/stages/warnet/indofight_stage_warnet_screen_flicker.png,,,todo,
+stage_warnet_floor,stage,warnet,Midground lantai (tile),64x48,1,,SpriteCook + Aseprite,art/stages/warnet/indofight_stage_warnet_floor.png,,,todo,
+stage_warnet_fg_chair,stage,warnet,Foreground kursi plastik,48x64,1,,SpriteCook + Aseprite,art/stages/warnet/indofight_stage_warnet_fg_chair.png,,,todo,
+stage_warnet_fg_cups,stage,warnet,Foreground gelas minuman energi,64x48,1,,SpriteCook + Aseprite,art/stages/warnet/indofight_stage_warnet_fg_cups.png,,,todo,
+stage_menu_bg,stage,menu,Latar menu,720x270,1,,SpriteCook + Aseprite,art/stages/menu/indofight_stage_menu_bg.png,,,todo,
+stage_menu_traffic,stage,menu,Lampu kendaraan lewat (animasi),128x24,8,ya,SpriteCook + Aseprite,art/stages/menu/indofight_stage_menu_traffic.png,,,todo,
+ui_kit_concept,ui,,Konsep layar pertarungan lengkap (HUD),480x270,1,,Kode (game/scripts/hud.gd),game/scripts/hud.gd,ya,,review,Digambar dengan kode (keputusan 10)
+ui_hp_frame,ui,,"Frame health bar (kiri, dicerminkan untuk kanan)",200x16,1,,Kode (game/scripts/hud.gd),game/scripts/hud.gd,ya,,review,Digambar dengan kode (keputusan 10)
+ui_hp_fill,ui,,"Isi health bar hijau, kuning, merah + lapisan hilang",192x8,3,,Kode (game/scripts/hud.gd),game/scripts/hud.gd,ya,,review,Digambar dengan kode (keputusan 10)
+ui_energy_frame,ui,,Frame energy bar,160x12,1,,Kode (game/scripts/hud.gd),game/scripts/hud.gd,ya,,review,Digambar dengan kode (keputusan 10)
+ui_energy_fill,ui,,Isi energy bar biru neon dan emas berkedip,152x6,4,,Kode (game/scripts/hud.gd),game/scripts/hud.gd,ya,,review,Digambar dengan kode (keputusan 10)
+ui_timer_frame,ui,,Frame timer,40x28,1,,Kode (game/scripts/hud.gd),game/scripts/hud.gd,ya,,review,Digambar dengan kode (keputusan 10)
+ui_digits,ui,,Angka digital 0-9,10x16 per angka,10,,Kode (game/scripts/hud.gd),game/scripts/hud.gd,ya,,review,Digambar dengan kode (keputusan 10)
+ui_round_dots,ui,,Penanda ronde menyala dan mati,8x8,2,,Kode (game/scripts/hud.gd),game/scripts/hud.gd,ya,,review,Digambar dengan kode (keputusan 10)
+ui_text_fight,ui,,Teks FIGHT!,200x60,6,,Kode (game/scripts/hud.gd),game/scripts/hud.gd,ya,,review,Digambar dengan kode (keputusan 10)
+ui_text_ko,ui,,Teks K.O.,200x60,6,,Kode (game/scripts/hud.gd),game/scripts/hud.gd,ya,,review,Digambar dengan kode (keputusan 10)
+ui_text_perfect,ui,,Teks PERFECT,200x48,6,,SpriteCook UI kit + Aseprite,art/ui/indofight_ui_text_perfect.png,,,todo,
+ui_text_timeup,ui,,Teks TIME UP,200x48,6,,SpriteCook UI kit + Aseprite,art/ui/indofight_ui_text_timeup.png,,,todo,
+ui_text_round,ui,,"Teks ROUND 1, 2, 3",160x40,3,,SpriteCook UI kit + Aseprite,art/ui/indofight_ui_text_round.png,,,todo,
+ui_text_combo,ui,,Teks COMBO x,96x24,1,,SpriteCook UI kit + Aseprite,art/ui/indofight_ui_text_combo.png,,,todo,
+ui_btn_menu,ui,,"Tombol menu Normal, Hover, Pressed",120x24,3,,SpriteCook UI kit + Aseprite,art/ui/indofight_ui_btn_menu.png,,,todo,
+ui_select_cursor,ui,,Kursor P1 merah dan P2 biru,68x68,2,,SpriteCook UI kit + Aseprite,art/ui/indofight_ui_select_cursor.png,,,todo,
+ui_select_frame,ui,,Bingkai grid Character Select,64x64,1,,SpriteCook UI kit + Aseprite,art/ui/indofight_ui_select_frame.png,,,todo,
+ui_touch_joystick,ui,,Joystick virtual (mobile),56x56,2,,SpriteCook UI kit + Aseprite,art/ui/indofight_ui_touch_joystick.png,,,todo,
+ui_touch_buttons,ui,,6 tombol aksi LP HP LK HK Skill Ultimate (mobile),24x24,12,,SpriteCook UI kit + Aseprite,art/ui/indofight_ui_touch_buttons.png,,,todo,
+ui_logo,ui,,Logo IndoFight besar dan kecil,240x80,2,,SpriteCook UI kit + Aseprite,art/ui/indofight_ui_logo.png,,,todo,
+vfx_hitspark_blunt,vfx,,Hit spark tumpul,48x48,6,,Kode (game/scripts/fight_view.gd),game/scripts/fight_view.gd,ya,,review,Digambar dengan kode (keputusan 10)
+vfx_hitspark_slash,vfx,,Hit spark tajam,64x32,6,,Kode (game/scripts/fight_view.gd),game/scripts/fight_view.gd,ya,,review,Digambar dengan kode (keputusan 10)
+vfx_blockspark,vfx,,Block spark,48x48,6,,Kode (game/scripts/fight_view.gd),game/scripts/fight_view.gd,ya,,review,Digambar dengan kode (keputusan 10)
+vfx_impact_flash,vfx,,Impact flash,64x64,4,,SpriteCook,art/vfx/indofight_vfx_impact_flash_sheet.png,,,todo,
+vfx_speedlines,vfx,,Speed lines,128x64,4,,SpriteCook,art/vfx/indofight_vfx_speedlines_sheet.png,,,todo,
+vfx_dash_dust,vfx,,Dash dust,48x24,6,,Kode (game/scripts/fight_view.gd),game/scripts/fight_view.gd,ya,,review,Digambar dengan kode (keputusan 10)
+vfx_land_dust,vfx,,Debu mendarat,64x24,6,,SpriteCook,art/vfx/indofight_vfx_land_dust_sheet.png,,,todo,
+vfx_screen_crack,vfx,,Screen crack,240x135,4,,SpriteCook,art/vfx/indofight_vfx_screen_crack_sheet.png,,,todo,
+vfx_status_stun,vfx,,Ikon Stun,24x16,6,,SpriteCook,art/vfx/indofight_vfx_status_stun_sheet.png,,,todo,
+vfx_status_burn,vfx,,Ikon Burn,16x16,6,,SpriteCook,art/vfx/indofight_vfx_status_burn_sheet.png,,,todo,
+vfx_status_blind,vfx,,Ikon Blind,16x16,4,,SpriteCook,art/vfx/indofight_vfx_status_blind_sheet.png,,,todo,
+vfx_status_slow,vfx,,Ikon Slow,16x16,4,,SpriteCook,art/vfx/indofight_vfx_status_slow_sheet.png,,,todo,
+vfx_status_buff,vfx,,Ikon Buff,16x16,4,,SpriteCook,art/vfx/indofight_vfx_status_buff_sheet.png,,,todo,
+sfx_hit_light,sfx,,Pukulan ringan,0.5s,,,ElevenLabs,audio/sfx/indofight_sfx_hit_light.wav,ya,,todo,Sementara memakai suara placeholder dari rumus di game/scripts/sfx.gd
+sfx_hit_heavy,sfx,,Pukulan berat,0.8s,,,ElevenLabs,audio/sfx/indofight_sfx_hit_heavy.wav,ya,,todo,Sementara memakai suara placeholder dari rumus di game/scripts/sfx.gd
+sfx_hit_blunt,sfx,,Benda tumpul,0.8s,,,ElevenLabs,audio/sfx/indofight_sfx_hit_blunt.wav,,,todo,
+sfx_hit_slash,sfx,,Benda tajam,0.6s,,,ElevenLabs,audio/sfx/indofight_sfx_hit_slash.wav,,,todo,
+sfx_block,sfx,,Block,0.5s,,,ElevenLabs,audio/sfx/indofight_sfx_block.wav,ya,,todo,Sementara memakai suara placeholder dari rumus di game/scripts/sfx.gd
+sfx_whoosh,sfx,,Ayunan meleset,0.4s,,,ElevenLabs,audio/sfx/indofight_sfx_whoosh.wav,ya,,todo,Sementara memakai suara placeholder dari rumus di game/scripts/sfx.gd
+sfx_dash,sfx,,Dash,0.4s,,,ElevenLabs,audio/sfx/indofight_sfx_dash.wav,,,todo,
+sfx_jump_land,sfx,,Mendarat,0.4s,,,ElevenLabs,audio/sfx/indofight_sfx_jump_land.wav,,,todo,
+sfx_ko,sfx,,K.O.,2.0s,,,ElevenLabs,audio/sfx/indofight_sfx_ko.wav,ya,,todo,Sementara memakai suara placeholder dari rumus di game/scripts/sfx.gd
+sfx_toa,sfx,,Teriakan Toa,1.5s,,,ElevenLabs,audio/sfx/indofight_sfx_toa.wav,,,todo,
+sfx_milk_throw,sfx,,Kotak susu dilempar,0.6s,,,ElevenLabs,audio/sfx/indofight_sfx_milk_throw.wav,,,todo,
+sfx_thunder,sfx,,Petir Gatot Kaca,1.5s,,,ElevenLabs,audio/sfx/indofight_sfx_thunder.wav,,,todo,
+sfx_scooter,sfx,,Motor matic dan sein,2.0s,,,ElevenLabs,audio/sfx/indofight_sfx_scooter.wav,,,todo,
+sfx_soup,sfx,,Kuah disiram,0.8s,,,ElevenLabs,audio/sfx/indofight_sfx_soup.wav,,,todo,
+sfx_coffee,sfx,,Seruput kopi,1.2s,,,ElevenLabs,audio/sfx/indofight_sfx_coffee.wav,,,todo,
+sfx_notif,sfx,,Notifikasi ojol,0.6s,,,ElevenLabs,audio/sfx/indofight_sfx_notif.wav,,,todo,
+sfx_teleport,sfx,,Cancel Order,0.5s,,,ElevenLabs,audio/sfx/indofight_sfx_teleport.wav,,,todo,
+sfx_santet,sfx,,Tusukan santet,1.5s,,,ElevenLabs,audio/sfx/indofight_sfx_santet.wav,,,todo,
+sfx_jumpscare,sfx,,Jump Scare,1.2s,,,ElevenLabs,audio/sfx/indofight_sfx_jumpscare.wav,,,todo,
+sfx_keyboard,sfx,,Keyboard mekanikal,1.0s,,,ElevenLabs,audio/sfx/indofight_sfx_keyboard.wav,,,todo,
+sfx_glitch,sfx,,Disconnect,1.5s,,,ElevenLabs,audio/sfx/indofight_sfx_glitch.wav,,,todo,
+sfx_ui_move,sfx,,Kursor pindah,0.2s,,,ElevenLabs,audio/sfx/indofight_sfx_ui_move.wav,,,todo,
+sfx_ui_select,sfx,,Pilih,0.4s,,,ElevenLabs,audio/sfx/indofight_sfx_ui_select.wav,,,todo,
+sfx_ui_back,sfx,,Batal,0.3s,,,ElevenLabs,audio/sfx/indofight_sfx_ui_back.wav,,,todo,
+sfx_timer_tick,sfx,,Hitung mundur,0.2s,,,ElevenLabs,audio/sfx/indofight_sfx_timer_tick.wav,,,todo,

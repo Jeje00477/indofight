@@ -1,0 +1,342 @@
+{
+  "name": "abang-ojol",
+  "origin": [
+    80,
+    151
+  ],
+  "tex_scale": 9,
+  "bones": [
+    {
+      "name": "head",
+      "parent": "chest",
+      "texture": "parts/head.png",
+      "z": 8,
+      "position": [
+        -1,
+        -28
+      ],
+      "sprite_offset": [
+        -10,
+        -19
+      ],
+      "length": 18.0,
+      "rest_dir": 180.0,
+      "size": [
+        20,
+        23
+      ],
+      "sprite": true
+    },
+    {
+      "name": "arm_b_upper",
+      "parent": "chest",
+      "texture": "parts/arm_b_upper.png",
+      "z": 0,
+      "position": [
+        -14,
+        -21
+      ],
+      "sprite_offset": [
+        -10,
+        -6
+      ],
+      "length": 16.16,
+      "rest_dir": -21.8,
+      "size": [
+        15,
+        26
+      ],
+      "sprite": false
+    },
+    {
+      "name": "arm_b_lower",
+      "parent": "arm_b_upper",
+      "texture": "parts/arm_b_lower.png",
+      "z": 1,
+      "position": [
+        -6,
+        15
+      ],
+      "sprite_offset": [
+        -11,
+        -5
+      ],
+      "length": 16.76,
+      "rest_dir": -17.35,
+      "size": [
+        16,
+        27
+      ],
+      "sprite": false
+    },
+    {
+      "name": "arm_f_upper",
+      "parent": "chest",
+      "texture": "parts/arm_f_upper.png",
+      "z": 9,
+      "position": [
+        10,
+        -21
+      ],
+      "sprite_offset": [
+        -5,
+        -5
+      ],
+      "length": 15.81,
+      "rest_dir": 18.43,
+      "size": [
+        15,
+        25
+      ],
+      "sprite": false
+    },
+    {
+      "name": "arm_f_lower",
+      "parent": "arm_f_upper",
+      "texture": "parts/arm_f_lower.png",
+      "z": 11,
+      "position": [
+        5,
+        15
+      ],
+      "sprite_offset": [
+        -5,
+        -5
+      ],
+      "length": 17.09,
+      "rest_dir": 20.56,
+      "size": [
+        17,
+        26
+      ],
+      "sprite": false
+    },
+    {
+      "name": "chest",
+      "parent": "hip",
+      "texture": "parts/chest.png",
+      "z": 7,
+      "position": [
+        0,
+        -10
+      ],
+      "sprite_offset": [
+        -18,
+        -32
+      ],
+      "length": 27.02,
+      "rest_dir": -177.88,
+      "size": [
+        32,
+        38
+      ],
+      "sprite": true
+    },
+    {
+      "name": "pelvis",
+      "parent": "hip",
+      "texture": "parts/pelvis.png",
+      "z": 6,
+      "position": [
+        0,
+        -10
+      ],
+      "sprite_offset": [
+        -13,
+        -7
+      ],
+      "length": 10.0,
+      "rest_dir": 0.0,
+      "size": [
+        23,
+        17
+      ],
+      "sprite": true
+    },
+    {
+      "name": "leg_b_upper",
+      "parent": "hip",
+      "texture": "parts/leg_b_upper.png",
+      "z": 2,
+      "position": [
+        -7,
+        2
+      ],
+      "sprite_offset": [
+        -10,
+        -7
+      ],
+      "length": 21.38,
+      "rest_dir": -10.78,
+      "size": [
+        18,
+        33
+      ],
+      "sprite": false
+    },
+    {
+      "name": "leg_b_lower",
+      "parent": "leg_b_upper",
+      "texture": "parts/leg_b_lower.png",
+      "z": 3,
+      "position": [
+        -4,
+        21
+      ],
+      "sprite_offset": [
+        -9,
+        -5
+      ],
+      "length": 23.19,
+      "rest_dir": -7.43,
+      "size": [
+        13,
+        29
+      ],
+      "sprite": false
+    },
+    {
+      "name": "leg_f_upper",
+      "parent": "hip",
+      "texture": "parts/leg_f_upper.png",
+      "z": 4,
+      "position": [
+        8,
+        2
+      ],
+      "sprite_offset": [
+        -7,
+        -7
+      ],
+      "length": 21.21,
+      "rest_dir": 8.13,
+      "size": [
+        11,
+        33
+      ],
+      "sprite": false
+    },
+    {
+      "name": "leg_f_lower",
+      "parent": "leg_f_upper",
+      "texture": "parts/leg_f_lower.png",
+      "z": 5,
+      "position": [
+        3,
+        21
+      ],
+      "sprite_offset": [
+        -9,
+        -5
+      ],
+      "length": 23.09,
+      "rest_dir": 4.97,
+      "size": [
+        17,
+        29
+      ],
+      "sprite": false
+    },
+    {
+      "name": "prop",
+      "parent": "arm_f_lower",
+      "texture": "parts/prop.png",
+      "z": 10,
+      "position": [
+        7,
+        16
+      ],
+      "sprite_offset": [
+        -9,
+        -3
+      ],
+      "length": 15.0,
+      "rest_dir": 0.0,
+      "size": [
+        19,
+        19
+      ],
+      "sprite": true
+    }
+  ],
+  "hip": [
+    0,
+    -47
+  ],
+  "meshes": [
+    {
+      "name": "arm_b",
+      "mode": "chain",
+      "texture": "parts/arm_b.png",
+      "z": 7.5,
+      "bones": [
+        "chest",
+        "arm_b_upper",
+        "arm_b_lower"
+      ],
+      "origin": [
+        -31,
+        -84
+      ],
+      "size": [
+        22,
+        43
+      ]
+    },
+    {
+      "name": "arm_f",
+      "mode": "chain",
+      "texture": "parts/arm_f.png",
+      "z": 9,
+      "bones": [
+        "chest",
+        "arm_f_upper",
+        "arm_f_lower"
+      ],
+      "origin": [
+        5,
+        -83
+      ],
+      "size": [
+        22,
+        41
+      ]
+    },
+    {
+      "name": "leg_b",
+      "mode": "chain",
+      "texture": "parts/leg_b.png",
+      "z": 2,
+      "bones": [
+        "leg_b_upper",
+        "leg_b_lower"
+      ],
+      "origin": [
+        -20,
+        -52
+      ],
+      "size": [
+        21,
+        52
+      ]
+    },
+    {
+      "name": "leg_f",
+      "mode": "chain",
+      "texture": "parts/leg_f.png",
+      "z": 4,
+      "bones": [
+        "leg_f_upper",
+        "leg_f_lower"
+      ],
+      "origin": [
+        1,
+        -52
+      ],
+      "size": [
+        18,
+        52
+      ]
+    }
+  ]
+}

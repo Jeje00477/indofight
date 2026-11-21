@@ -1,0 +1,76 @@
+{
+  "assets": [
+    {
+      "label": "emak-emak_ref",
+      "asset_id": "72d43240-21bd-4f50-b397-5b34be4786a9",
+      "jenis": "unggahan referensi gaya",
+      "file": "art/reference/characters/emak-emak.png",
+      "kredit": 0,
+      "sha12": "22b9aba68212"
+    },
+    {
+      "label": "abang-ojol_ref",
+      "asset_id": "3cde3b98-588b-4bf3-a474-36388a76aa9d",
+      "jenis": "unggahan referensi gaya",
+      "file": "art/reference/characters/abang-ojol.png",
+      "kredit": 0,
+      "sha12": "5cc5b16ca397"
+    },
+    {
+      "label": "stage_ref",
+      "asset_id": "54a7ec64-3b83-425d-b2a1-d497cae1b77f",
+      "jenis": "unggahan referensi gaya",
+      "file": "art/reference/referensi-stage-dpr.png",
+      "kredit": 0,
+      "sha12": "a127891939ee"
+    },
+    {
+      "label": "emak-emak_base",
+      "asset_id": "dca4990f-4c72-4d2d-a9ac-828bbd913229",
+      "job_id": "cccd062e-3cd4-47ad-a50b-8ce51ea74ef3",
+      "jenis": "gambar dasar (mentah 380 x 317)",
+      "model": "gpt-image-2",
+      "kualitas": "low",
+      "kredit": 2,
+      "file_mentah": "art/characters/emak-emak/rig/source_gpt-image-2-low.png",
+      "file": "art/characters/emak-emak/indofight_char_emak-emak_base.png",
+      "catatan": "File final dibuat lokal oleh tools/pixelize_base.py (dikecilkan, dipaskan ke palet) dan tidak diunggah ulang.",
+      "sha12": "d7ec33c0e152",
+      "sha12_mentah": "9d32882378ef"
+    },
+    {
+      "label": "abang-ojol_base",
+      "asset_id": "1f14ec80-f6f1-4c68-a9b6-cbd21cb077bb",
+      "job_id": "59c0c0bd-9c47-463c-be5a-25744583d772",
+      "jenis": "gambar dasar (mentah 170 x 176)",
+      "model": "gpt-image-2",
+      "kualitas": "low",
+      "kredit": 2,
+      "file_mentah": "art/characters/abang-ojol/rig/source_gpt-image-2-low.png",
+      "file": "art/characters/abang-ojol/indofight_char_abang-ojol_base.png",
+      "catatan": "File final dibuat lokal oleh tools/pixelize_base.py (dikecilkan, dipaskan ke palet) dan tidak diunggah ulang.",
+      "sha12": "0889c3b2fe7e",
+      "sha12_mentah": "2861fac63db6"
+    },
+    {
+      "label": "stage_gang_bg",
+      "asset_id": "8d82f7d9-cb16-45f8-ad75-8885c8922bed",
+      "job_id": "85b1531e-a670-45ee-8aee-ed6ade198bdb",
+      "jenis": "gambar stage utuh (mentah 503 x 283)",
+      "model": "gpt-image-2",
+      "kualitas": "medium",
+      "kredit": 9,
+      "file_mentah": "art/stages/gang/source_gpt-image-2-medium.png",
+      "file": "art/stages/gang/indofight_stage_gang_bg.png",
+      "catatan": "tools/pixelize_stage.py membelahnya menjadi layer bg (720 x 226) dan floor (960 x 44).",
+      "sha12": "c15906839b83",
+      "sha12_mentah": "632ca775d418"
+    }
+  ],
+  "kredit": {
+    "awal": 40,
+    "terpakai": 13,
+    "sisa": 27,
+    "dicek": "2026-11-11"
+  }
+}

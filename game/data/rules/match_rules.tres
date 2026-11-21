@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="MatchRules" format=3]
+
+[ext_resource type="Script" path="res://data/match_rules.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+rounds_to_win = 2
+round_seconds = 99
+intro_frames = 96
+round_end_frames = 170
+start_offset = 70
+energy_max = 100
+energy_per_100_dealt = 8
+energy_per_100_taken = 14
+energy_on_block_attacker = 2
+energy_on_block_defender = 1
+input_buffer_frames = 8
+dash_tap_window = 12
+combo_scaling_step = 10
+combo_scaling_min = 40
+hitstun_decay = 1
+hitstun_min = 6
+knockdown_frames = 34
+getup_frames = 12
+pushback_friction = 82
+ko_hitstop = 22
+hit_flash_frames = 4
+max_distance = 400
+stage_margin = 18

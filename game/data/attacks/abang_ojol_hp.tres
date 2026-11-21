@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="AttackData" format=3]
+
+[ext_resource type="Script" path="res://data/attack_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"hp"
+display_name = "Hantam Helm"
+startup = 9
+active = 3
+recovery = 17
+hitstun = 20
+blockstun = 13
+hitstop = 8
+blockstop = 5
+damage = 80
+chip_damage = 8
+heavy = true
+pushback_hit = 320
+pushback_block = 260
+hitbox = Rect2i(14, -100, 56, 62)
+spark = &"blunt"
+shake = 2
+cancel_into = Array[StringName]([&"hk"])

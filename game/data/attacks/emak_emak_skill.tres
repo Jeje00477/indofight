@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="AttackData" format=3]
+
+[ext_resource type="Script" path="res://data/attack_data.gd" id="1"]
+[ext_resource type="Script" path="res://data/projectile_data.gd" id="2"]
+[ext_resource type="Texture2D" path="res://props/bekal.png" id="3"]
+
+[sub_resource type="Resource" id="proj"]
+script = ExtResource("2")
+speed = 320
+max_distance = 170
+returns = true
+size = Vector2i(24, 16)
+spawn_offset = Vector2i(28, -88)
+lifetime = 200
+texture = ExtResource("3")
+frames = 8
+
+[resource]
+script = ExtResource("1")
+id = &"skill"
+display_name = "Kotak Bekal Boomerang"
+startup = 14
+active = 2
+recovery = 22
+hitstun = 18
+blockstun = 12
+hitstop = 6
+blockstop = 4
+damage = 70
+chip_damage = 7
+pushback_hit = 240
+pushback_block = 200
+hitbox = Rect2i(0, 0, 0, 0)
+spark = &"blunt"
+shake = 2
+cooldown = 240
+projectile = SubResource("proj")

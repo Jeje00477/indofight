@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="AttackData" format=3]
+
+[ext_resource type="Script" path="res://data/attack_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"lp"
+display_name = "Jab Helm"
+startup = 4
+active = 2
+recovery = 8
+hitstun = 13
+blockstun = 8
+hitstop = 4
+blockstop = 3
+damage = 30
+chip_damage = 3
+pushback_hit = 200
+pushback_block = 200
+hitbox = Rect2i(16, -88, 50, 18)
+spark = &"blunt"
+shake = 1
+cancel_into = Array[StringName]([&"lk", &"hp", &"skill"])

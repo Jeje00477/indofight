@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="AttackData" format=3]
+
+[ext_resource type="Script" path="res://data/attack_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"ultimate"
+display_name = "Sein Kanan Belok Kiri"
+startup = 50
+active = 26
+recovery = 30
+hitstun = 30
+blockstun = 20
+hitstop = 14
+blockstop = 8
+damage = 300
+chip_damage = 0
+unblockable = true
+knockdown = true
+launch_speed = 480
+heavy = true
+pushback_hit = 500
+pushback_block = 300
+lunge_speed = 650
+lunge_from = 51
+lunge_to = 76
+hitbox = Rect2i(-10, -34, 60, 34)
+spark = &"blunt"
+shake = 5
+requires_full_energy = true
+cinematic_frames = 45
+invulnerable_from = 1
+invulnerable_to = 50
+vehicle = true

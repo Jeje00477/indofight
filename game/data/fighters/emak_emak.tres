@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="FighterData" format=3]
+
+[ext_resource type="Script" path="res://data/fighter_data.gd" id="1"]
+[ext_resource type="Texture2D" path="res://characters/emak-emak/base.png" id="base"]
+[ext_resource type="Texture2D" path="res://props/scooter.png" id="vehicle"]
+[ext_resource type="PackedScene" path="res://characters/emak-emak/emak_emak_rig.tscn" id="rig"]
+[ext_resource type="Resource" path="res://data/attacks/emak_emak_lp.tres" id="2"]
+[ext_resource type="Resource" path="res://data/attacks/emak_emak_hp.tres" id="3"]
+[ext_resource type="Resource" path="res://data/attacks/emak_emak_lk.tres" id="4"]
+[ext_resource type="Resource" path="res://data/attacks/emak_emak_hk.tres" id="5"]
+[ext_resource type="Resource" path="res://data/attacks/emak_emak_skill.tres" id="6"]
+[ext_resource type="Resource" path="res://data/attacks/emak_emak_ultimate.tres" id="7"]
+
+[resource]
+script = ExtResource("1")
+rig_scene = ExtResource("rig")
+vehicle_texture = ExtResource("vehicle")
+portrait = ExtResource("base")
+id = &"emak-emak"
+display_name = "EMAK-EMAK"
+color = Color(0.702, 0.3725, 0.5333, 1)
+accent = Color(0.6353, 0.6392, 0.6471, 1)
+vehicle_color = Color(0.702, 0.133, 0.169, 1)
+max_health = 1000
+walk_forward_speed = 115
+walk_backward_speed = 85
+dash_speed = 380
+backdash_speed = 340
+dash_frames = 10
+jump_speed = 560
+gravity = 28
+air_speed = 130
+stand_hurtbox = Rect2i(-17, -100, 34, 100)
+crouch_hurtbox = Rect2i(-18, -76, 36, 76)
+push_width = 54
+light_punch = ExtResource("2")
+heavy_punch = ExtResource("3")
+light_kick = ExtResource("4")
+heavy_kick = ExtResource("5")
+skill = ExtResource("6")
+ultimate = ExtResource("7")

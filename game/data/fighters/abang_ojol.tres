@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="FighterData" format=3]
+
+[ext_resource type="Script" path="res://data/fighter_data.gd" id="1"]
+[ext_resource type="Texture2D" path="res://characters/abang-ojol/base.png" id="base"]
+[ext_resource type="Texture2D" path="res://props/motor.png" id="vehicle"]
+[ext_resource type="PackedScene" path="res://characters/abang-ojol/abang_ojol_rig.tscn" id="rig"]
+[ext_resource type="Resource" path="res://data/attacks/abang_ojol_lp.tres" id="2"]
+[ext_resource type="Resource" path="res://data/attacks/abang_ojol_hp.tres" id="3"]
+[ext_resource type="Resource" path="res://data/attacks/abang_ojol_lk.tres" id="4"]
+[ext_resource type="Resource" path="res://data/attacks/abang_ojol_hk.tres" id="5"]
+[ext_resource type="Resource" path="res://data/attacks/abang_ojol_skill.tres" id="6"]
+[ext_resource type="Resource" path="res://data/attacks/abang_ojol_ultimate.tres" id="7"]
+
+[resource]
+script = ExtResource("1")
+rig_scene = ExtResource("rig")
+vehicle_texture = ExtResource("vehicle")
+portrait = ExtResource("base")
+id = &"abang-ojol"
+display_name = "ABANG OJOL"
+color = Color(0.1333, 0.5922, 0.1412, 1)
+accent = Color(0.8275, 0.8118, 0.8, 1)
+max_health = 950
+walk_forward_speed = 175
+walk_backward_speed = 135
+dash_speed = 540
+backdash_speed = 480
+dash_frames = 9
+jump_speed = 600
+gravity = 30
+air_speed = 190
+stand_hurtbox = Rect2i(-14, -104, 28, 104)
+crouch_hurtbox = Rect2i(-15, -74, 30, 74)
+push_width = 44
+light_punch = ExtResource("2")
+heavy_punch = ExtResource("3")
+light_kick = ExtResource("4")
+heavy_kick = ExtResource("5")
+skill = ExtResource("6")
+ultimate = ExtResource("7")

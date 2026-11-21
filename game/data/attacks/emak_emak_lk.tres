@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="AttackData" format=3]
+
+[ext_resource type="Script" path="res://data/attack_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"lk"
+display_name = "Tendang Sandal"
+startup = 6
+active = 3
+recovery = 12
+hitstun = 16
+blockstun = 10
+hitstop = 5
+blockstop = 3
+damage = 40
+chip_damage = 4
+pushback_hit = 240
+pushback_block = 220
+hitbox = Rect2i(18, -60, 48, 22)
+spark = &"blunt"
+shake = 1
+cancel_into = Array[StringName]([&"hk", &"hp", &"skill"])

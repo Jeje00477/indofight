@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="AttackData" format=3]
+
+[ext_resource type="Script" path="res://data/attack_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"lk"
+display_name = "Tendangan Cepat"
+startup = 5
+active = 3
+recovery = 10
+hitstun = 15
+blockstun = 9
+hitstop = 5
+blockstop = 3
+damage = 40
+chip_damage = 4
+pushback_hit = 220
+pushback_block = 210
+hitbox = Rect2i(14, -62, 48, 22)
+spark = &"blunt"
+shake = 1
+cancel_into = Array[StringName]([&"hp", &"hk", &"skill"])

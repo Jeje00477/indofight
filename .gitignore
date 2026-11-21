@@ -1,0 +1,7 @@
+# Cache Godot, dibuat ulang otomatis. File .import dan .uid tetap di-commit.
+.godot/
+__pycache__/
+.env
+export/
+*_fixed.png
+*.tmp

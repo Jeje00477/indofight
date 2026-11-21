@@ -1,0 +1,66 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/fight_view.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/hud.gd" id="3"]
+[ext_resource type="Script" path="res://scripts/sfx.gd" id="4"]
+[ext_resource type="Script" path="res://scripts/menu.gd" id="5"]
+[ext_resource type="Script" path="res://scripts/fighters.gd" id="6"]
+[ext_resource type="Script" path="res://scripts/title_backdrop.gd" id="9"]
+[ext_resource type="Script" path="res://scripts/controls_panel.gd" id="10"]
+[ext_resource type="Resource" path="res://data/rules/match_rules.tres" id="7"]
+[ext_resource type="Resource" path="res://data/stages/gang.tres" id="8"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1")
+rules = ExtResource("7")
+stage = ExtResource("8")
+
+[node name="View" type="Node2D" parent="."]
+script = ExtResource("2")
+
+[node name="Fighters" type="Node2D" parent="."]
+script = ExtResource("6")
+
+[node name="ViewFront" type="Node2D" parent="."]
+script = ExtResource("2")
+layer = 1
+
+[node name="Backdrop" type="Node2D" parent="."]
+script = ExtResource("9")
+
+[node name="HudLayer" type="CanvasLayer" parent="."]
+
+[node name="Hud" type="Control" parent="HudLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("3")
+
+[node name="Menu" type="Control" parent="HudLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("5")
+
+[node name="Controls" type="Control" parent="HudLayer"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("10")
+
+[node name="Sfx" type="Node" parent="."]
+script = ExtResource("4")

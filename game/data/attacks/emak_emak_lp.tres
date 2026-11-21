@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="AttackData" format=3]
+
+[ext_resource type="Script" path="res://data/attack_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"lp"
+display_name = "Colek Sapu"
+startup = 7
+active = 3
+recovery = 13
+hitstun = 17
+blockstun = 11
+hitstop = 5
+blockstop = 3
+damage = 45
+chip_damage = 4
+pushback_hit = 260
+pushback_block = 240
+hitbox = Rect2i(34, -72, 86, 18)
+spark = &"slash"
+shake = 1
+cancel_into = Array[StringName]([&"hp", &"skill"])

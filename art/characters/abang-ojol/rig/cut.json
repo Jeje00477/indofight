@@ -1,0 +1,28 @@
+{
+  "name": "abang-ojol",
+  "sheet": "sheet.png",
+  "out_dir": "game/characters/abang-ojol",
+  "origin": [80, 151],
+  "hip": [80, 104],
+  "parts": [
+    {"name": "head", "parent": "chest", "z": 8, "pivot": [79, 66], "end": [79, 48], "joint": 4, "polygon": [[40, 40], [120, 40], [120, 66.5], [40, 66.5]]},
+    {"name": "arm_b_upper", "parent": "chest", "z": 0, "pivot": [66, 73], "end": [60, 88], "joint": 5, "polygon": [[40, 66.5], [70.5, 66.5], [70, 79], [68, 88.5], [40, 88.5]], "extra": {"from": "chest", "polygon": [[69.4, 74.5], [71, 74.5], [71, 80.5], [70, 80.5], [70, 85.5], [68.4, 85.5], [68.4, 80.5], [69.4, 80.5]]}},
+    {"name": "arm_b_lower", "parent": "arm_b_upper", "z": 1, "pivot": [60, 88], "end": [55, 104], "joint": 5, "polygon": [[40, 86], [68, 86], [67, 97], [64, 104], [62, 114], [40, 114]]},
+    {"name": "arm_f_upper", "parent": "chest", "z": 9, "pivot": [90, 73], "end": [95, 88], "joint": 5, "polygon": [[87.5, 66.5], [120, 66.5], [120, 88.5], [89.5, 88.5], [89.5, 74.5], [87.5, 74.5]], "extra": {"from": "chest", "polygon": [[88.5, 74.5], [89.5, 74.5], [89.5, 85.5], [88.5, 85.5]]}},
+    {"name": "arm_f_lower", "parent": "arm_f_upper", "z": 11, "pivot": [95, 88], "end": [101, 104], "joint": 5, "polygon": [[89.5, 88.5], [120, 88.5], [120, 114], [94, 114], [94, 98], [89.5, 90]]},
+    {"name": "chest", "parent": "hip", "z": 7, "pivot": [80, 94], "end": [79, 67], "polygon": [[60, 66.5], [100, 66.5], [100, 94.5], [60, 94.5]], "extra": {"from": "pelvis", "polygon": [[62, 94.5], [98, 94.5], [98, 100.5], [62, 100.5]]}},
+    {"name": "pelvis", "parent": "hip", "z": 6, "pivot": [80, 94], "end": [80, 104], "polygon": [[60, 94.5], [100, 94.5], [100, 104.5], [60, 104.5]], "extra": {"from": "chest", "polygon": [[64, 87], [96, 87], [96, 94.5], [64, 94.5]]}},
+    {"name": "leg_b_upper", "parent": "hip", "z": 2, "pivot": [73, 106], "end": [69, 127], "pad_top": 5, "polygon": [[40, 104.5], [81, 104.5], [81, 116], [78, 127.5], [40, 127.5]]},
+    {"name": "leg_b_lower", "parent": "leg_b_upper", "z": 3, "pivot": [69, 127], "end": [66, 150], "joint": 5, "polygon": [[40, 125], [79, 125], [77, 153], [40, 153]]},
+    {"name": "leg_f_upper", "parent": "hip", "z": 4, "pivot": [88, 106], "end": [91, 127], "pad_top": 5, "polygon": [[80.5, 104.5], [120, 104.5], [120, 127.5], [82, 127.5], [80.5, 112]]},
+    {"name": "leg_f_lower", "parent": "leg_f_upper", "z": 5, "pivot": [91, 127], "end": [93, 150], "joint": 5, "polygon": [[80, 125], [120, 125], [120, 153], [80, 153]]},
+    {"name": "prop", "parent": "arm_f_lower", "attach": [102, 104], "z": 10, "pivot": [169, 135], "end": [169, 150], "polygon": [[156, 124], [190, 124], [190, 153], [156, 153]]}
+  ],
+  "meshes": [
+    {"name": "arm_b", "mode": "chain", "parts": ["arm_b_upper", "arm_b_lower"], "bones": ["chest", "arm_b_upper", "arm_b_lower"], "z": 7.5},
+    {"name": "arm_f", "mode": "chain", "parts": ["arm_f_upper", "arm_f_lower"], "bones": ["chest", "arm_f_upper", "arm_f_lower"], "z": 9},
+    {"name": "leg_b", "mode": "chain", "parts": ["leg_b_upper", "leg_b_lower"], "z": 2},
+    {"name": "leg_f", "mode": "chain", "parts": ["leg_f_upper", "leg_f_lower"], "z": 4}
+  ],
+  "hidden": []
+}

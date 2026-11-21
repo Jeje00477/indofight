@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="AttackData" format=3]
+
+[ext_resource type="Script" path="res://data/attack_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"hk"
+display_name = "Gebuk Sapu"
+startup = 18
+active = 4
+recovery = 26
+hitstun = 24
+blockstun = 16
+hitstop = 10
+blockstop = 7
+damage = 130
+chip_damage = 12
+knockdown = true
+launch_speed = 340
+heavy = true
+pushback_hit = 420
+pushback_block = 320
+hitbox = Rect2i(26, -108, 94, 104)
+spark = &"slash"
+shake = 4
