@@ -19,12 +19,20 @@ var main
 
 var _font: Font
 
+## Kemiringan garis tengah layar versus: setengah selisih x antara atas dan bawah.
+const VS_SLANT := 36.0
+## Latar dan rig layar versus, hanya ada selama layar itu tampil.
+var _vs_back: Node2D
+var _vs_rigs: Array = []
+
 
 func _ready() -> void:
 	_font = UiFont.get_font()
 
 
 func _process(_delta: float) -> void:
+	if main != null:
+		_update_versus()
 	queue_redraw()
 
 
@@ -135,7 +143,7 @@ const TITLE_NOTES := {
 	"LAWAN KOMPUTER": "Bertarung best of 3 melawan komputer",
 	"2 PEMAIN": "Dua pemain di satu keyboard",
 	"LATIHAN": "Berlatih jurus: health dan ultimate selalu terisi",
-	"KONTROL": "Lihat daftar tombol",
+	"KONTROL": "Lihat dan ubah tombol",
 	"KELUAR": "Tutup game",
 }
 
@@ -212,24 +220,170 @@ func _draw_select(w: float, h: float) -> void:
 			HORIZONTAL_ALIGNMENT_CENTER, w)
 
 
+## Layar versus (docs/decisions.md no. 27). Dua sisi miring masuk dari samping, lalu di
+## frame VS_SLAM tulisan VS dibanting ke tengah dengan kilat putih, guncangan, dan percikan.
+## Setelah itu latar terus bergerak (garis miring, sinar berputar, bara naik, kilat di garis
+## tengah) sampai layar memutih masuk ke pertarungan. Petarung tampil dengan rig beranimasi.
 func _draw_versus(w: float, h: float) -> void:
-	draw_rect(Rect2(0, 0, w, h), Color(0.02, 0.02, 0.05, 1.0))
 	var t: int = main.screen_frame
-	var slide := maxf(0.0, 1.0 - t / 14.0)
-	var d1: FighterData = main.roster[main.picks[0]]
-	var d2: FighterData = main.roster[main.picks[1]]
+	var slam: int = main.VS_SLAM
+	var off := _vs_offset(t, w)
 	var half := w * 0.5
-	draw_rect(Rect2(-slide * half, 0, half, h), Color(d1.color.darkened(0.6), 1.0))
-	draw_rect(Rect2(half + slide * half, 0, half, h), Color(d2.color.darkened(0.6), 1.0))
-	_figure(Rect2(half * 0.5 - 30 - slide * half, 50, 60, 150), d1, 1)
-	_figure(Rect2(half * 1.5 - 30 + slide * half, 50, 60, 150), d2, -1)
-	_text(Vector2(-slide * half, 228), d1.display_name, 16, C_TEXT, HORIZONTAL_ALIGNMENT_CENTER, half)
-	_text(Vector2(half + slide * half, 228), d2.display_name, 16, C_TEXT, HORIZONTAL_ALIGNMENT_CENTER, half)
-	if t > 14:
-		draw_rect(Rect2(half - 3, 0, 6, h), C_GOLD)
-		draw_rect(Rect2(half - 30, h * 0.5 - 26, 60, 44), C_FRAME)
-		_text(Vector2(half - 60, h * 0.5 + 8), "VS", 32, C_GOLD, HORIZONTAL_ALIGNMENT_CENTER, 120)
-	_text(Vector2(0, h - 8), main.stage.display_name, UiFont.SMALL, C_DIM, HORIZONTAL_ALIGNMENT_CENTER, w)
+	for i in 2:
+		if _vs_rigs.size() > i and _vs_rigs[i] == null:
+			var d: FighterData = main.roster[main.picks[i]]
+			var side := -1.0 if i == 0 else 1.0
+			_figure(Rect2(half + side * (w * 0.25 + off) - 30, h - 210, 60, 150), d, 1 if i == 0 else -1)
+	# Garis tengah: emas tebal, ditambah kilat yang berkedip setelah VS dibanting.
+	var top := Vector2(half + VS_SLANT, 0)
+	var bottom := Vector2(half - VS_SLANT, h)
+	var line_col := C_GOLD if t >= slam else Color(C_GOLD, clampf(t / float(slam), 0.0, 1.0))
+	draw_colored_polygon(PackedVector2Array([top - Vector2(3, 0), top + Vector2(3, 0), bottom + Vector2(3, 0),
+			bottom - Vector2(3, 0)]), line_col)
+	if t >= slam and t % 6 < 4:
+		var pts := PackedVector2Array()
+		for k in 15:
+			pts.append(top.lerp(bottom, k / 14.0) + Vector2((_rnd(k + t * 31) - 0.5) * 14.0, 0).round())
+		draw_polyline(pts, Color(0.85, 0.97, 1.0), 1.0)
+	# Bara api naik di kedua sisi.
+	for k in 36:
+		var speed := 0.6 + _rnd(k * 3) * 1.4
+		var ex := roundf(_rnd(k * 7) * w + sin((t + k * 9) * 0.08) * 3.0)
+		var ey := roundf(h - fposmod(t * speed + _rnd(k * 11) * h, h + 20.0))
+		var ember := C_GOLD if k % 3 else C_RED.lightened(0.2)
+		draw_rect(Rect2(ex, ey, 1 + k % 2, 1 + k % 2), Color(ember, 0.75))
+	# Papan nama miring, masuk dari luar layar.
+	for i in 2:
+		var d: FighterData = main.roster[main.picks[i]]
+		var e := 1.0 - pow(1.0 - clampf((t - slam - 4 - i * 3) / 10.0, 0.0, 1.0), 3.0)
+		var bx := roundf(-180.0 + 192.0 * e) if i == 0 else roundf(w + 12.0 - 192.0 * e)
+		var by := h - 62.0
+		var plate := PackedVector2Array([Vector2(bx, by), Vector2(bx + 176, by), Vector2(bx + 168, by + 34),
+				Vector2(bx - 8, by + 34)])
+		draw_colored_polygon(plate, Color(C_SHADOW, 0.85))
+		draw_rect(Rect2(bx, by, 176, 2), d.color.lightened(0.3))
+		_text(Vector2(bx + 8, by + 17), d.display_name, UiFont.LARGE, C_TEXT)
+		if d.ultimate != null:
+			_text(Vector2(bx + 8, by + 30), "ULTIMATE: " + d.ultimate.display_name, UiFont.SMALL, C_GOLD)
+	# VS dibanting: mengecil dari besar ke ukuran akhir, lalu cincin dan percikan memancar.
+	if t >= slam:
+		var age := t - slam
+		var fs := int(lerpf(96.0, 44.0, clampf(age / 5.0, 0.0, 1.0)))
+		var vs_w := _font.get_string_size("VS", HORIZONTAL_ALIGNMENT_LEFT, -1, fs).x
+		var vs_pos := Vector2(roundf(half - vs_w * 0.5), roundf(h * 0.5 + fs * 0.32))
+		for o in [Vector2(4, 4), Vector2(3, 3), Vector2(2, 2)]:
+			draw_string(_font, vs_pos + o, "VS", HORIZONTAL_ALIGNMENT_LEFT, -1, fs, C_RED.darkened(0.3))
+		for o in [Vector2(1, 0), Vector2(-1, 0), Vector2(0, 1), Vector2(0, -1)]:
+			draw_string(_font, vs_pos + o, "VS", HORIZONTAL_ALIGNMENT_LEFT, -1, fs, C_SHADOW)
+		@warning_ignore("integer_division")
+		var shine := age < 3 or (t / 4) % 20 == 0
+		draw_string(_font, vs_pos, "VS", HORIZONTAL_ALIGNMENT_LEFT, -1, fs, Color.WHITE if shine else C_GOLD)
+		if age < 24:
+			draw_arc(Vector2(half, h * 0.5), 10.0 + age * 9.0, 0.0, TAU, 40, Color(1, 1, 1, 1.0 - age / 24.0), 2.0)
+		if age < 34:
+			for k in 28:
+				var ang := _rnd(k * 5) * TAU
+				var dist := (1.6 + _rnd(k * 13) * 3.4) * age
+				var p := Vector2(half, h * 0.5) + Vector2(cos(ang), sin(ang)) * dist + Vector2(0, age * age * 0.05)
+				draw_rect(Rect2(p.round(), Vector2(2, 2)), Color(C_GOLD if k % 2 else Color.WHITE, 1.0 - age / 34.0))
+	# Bilah hitam sinematik di atas dan bawah.
+	var bar := roundf(16.0 * clampf(t / 8.0, 0.0, 1.0))
+	draw_rect(Rect2(0, 0, w, bar), Color.BLACK)
+	draw_rect(Rect2(0, h - bar, w, bar), Color.BLACK)
+	_text(Vector2(0, h - 4), "RONDE 1   " + main.stage.display_name, UiFont.SMALL, C_DIM, HORIZONTAL_ALIGNMENT_CENTER, w)
+	# Kilat putih saat VS dibanting, dan layar memutih sebelum masuk pertarungan.
+	var flash := 0.0
+	if t >= slam and t < slam + 6:
+		flash = 1.0 - (t - slam) / 6.0
+	flash = maxf(flash, clampf((t - main.VERSUS_FRAMES + 12) / 12.0, 0.0, 1.0))
+	if flash > 0.0:
+		draw_rect(Rect2(0, 0, w, h), Color(1, 1, 1, flash))
+
+
+## Latar versus, digambar di belakang rig petarung.
+func _draw_versus_back() -> void:
+	var c := _vs_back
+	var w := size.x
+	var h := size.y
+	var t: int = main.screen_frame
+	var off := _vs_offset(t, w)
+	var half := w * 0.5
+	c.draw_rect(Rect2(0, 0, w, h), Color(0.02, 0.02, 0.05))
+	for i in 2:
+		var d: FighterData = main.roster[main.picks[i]]
+		var s := -off if i == 0 else off
+		var edge_top := half + VS_SLANT + s
+		var edge_bottom := half - VS_SLANT + s
+		var outer := s if i == 0 else w + s
+		c.draw_colored_polygon(PackedVector2Array([Vector2(outer, 0), Vector2(edge_top, 0), Vector2(edge_bottom, h),
+				Vector2(outer, h)]), d.color.darkened(0.55))
+		# Sinar berputar dari belakang petarung.
+		var center := Vector2(half + (-1.0 if i == 0 else 1.0) * (w * 0.25) + s, h - 110)
+		for k in 12:
+			var a0 := k * TAU / 12.0 + t * 0.006 * (1 if i == 0 else -1)
+			var ray := PackedVector2Array([center, center + Vector2(cos(a0), sin(a0)) * 150.0,
+					center + Vector2(cos(a0 + 0.2), sin(a0 + 0.2)) * 150.0])
+			c.draw_colored_polygon(ray, Color(d.color.lightened(0.35), 0.13))
+		# Garis miring sejajar garis tengah, bergeser menjauh dari tengah.
+		for k in 9:
+			var band := fposmod(k * 30.0 + t * 1.5, 270.0)
+			var x := (edge_bottom - band - 18.0) if i == 0 else (edge_bottom + band + 8.0)
+			c.draw_colored_polygon(PackedVector2Array([Vector2(x + VS_SLANT * 2, 0), Vector2(x + VS_SLANT * 2 + 6, 0),
+					Vector2(x + 6, h), Vector2(x, h)]), Color(1, 1, 1, 0.05))
+		# Sorot lantai di bawah kaki.
+		c.draw_rect(Rect2(center.x - 44, h - 60, 88, 3), Color(d.color.lightened(0.5), 0.35))
+
+
+## Geseran masuk kedua sisi: besar di awal, nol saat VS dibanting.
+func _vs_offset(t: int, w: float) -> float:
+	return roundf(w * 0.6 * pow(1.0 - clampf(t / float(main.VS_SLAM), 0.0, 1.0), 2.0))
+
+
+## Angka acak tetap dari bilangan bulat, supaya efek sama tiap diputar.
+func _rnd(i: int) -> float:
+	return fposmod(sin(i * 12.9898 + 4.1) * 43758.5453, 1.0)
+
+
+## Pasang atau lepas latar dan rig layar versus, lalu gerakkan rig dan guncangan layar.
+func _update_versus() -> void:
+	if main.screen != main.Screen.VERSUS:
+		if _vs_back != null:
+			_vs_back.queue_free()
+			for r in _vs_rigs:
+				if r != null:
+					r.queue_free()
+			_vs_back = null
+			_vs_rigs.clear()
+			position = Vector2.ZERO
+		return
+	if _vs_back == null:
+		_vs_back = Node2D.new()
+		_vs_back.show_behind_parent = true
+		_vs_back.draw.connect(_draw_versus_back)
+		add_child(_vs_back)
+		for i in 2:
+			var d: FighterData = main.roster[main.picks[i]]
+			var rig: Node2D = null
+			if d.rig_scene != null:
+				rig = d.rig_scene.instantiate()
+				rig.show_behind_parent = true
+				# Petarung sama: P2 lebih gelap, seperti di pertarungan (scripts/main.gd).
+				rig.modulate = Color(0.62, 0.66, 0.9) if i == 1 and main.picks[0] == main.picks[1] else d.tint
+				add_child(rig)
+			_vs_rigs.append(rig)
+	var t: int = main.screen_frame
+	var slam: int = main.VS_SLAM
+	var off := _vs_offset(t, size.x)
+	for i in 2:
+		var rig: Node2D = _vs_rigs[i]
+		if rig != null:
+			var side := -1.0 if i == 0 else 1.0
+			rig.position = Vector2(roundf(size.x * 0.5 + side * (size.x * 0.25 + off)), size.y - 60)
+			rig.pose(&"idle", t / 60.0, 1 if i == 0 else -1, t >= slam and t < slam + 3)
+	_vs_back.queue_redraw()
+	# Guncangan singkat saat VS dibanting.
+	var shake := 0.0 if t < slam or t >= slam + 10 else (slam + 10 - t) / 3.0
+	position = Vector2(roundf(sin(t * 2.7) * shake), roundf(cos(t * 3.9) * shake * 0.6))
 
 
 func _draw_overlay(w: float, h: float) -> void:
