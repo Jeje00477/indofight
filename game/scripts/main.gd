@@ -7,6 +7,7 @@ extends Node2D
 const FightSim := preload("res://scripts/sim/fight_sim.gd")
 const InputReader := preload("res://scripts/input_reader.gd")
 const CpuPlayer := preload("res://scripts/cpu_player.gd")
+const KeyBindings := preload("res://scripts/key_bindings.gd")
 
 enum Screen { SPLASH, TITLE, SELECT, VERSUS, FIGHT }
 enum Mode { VS_CPU, VS_LOCAL, TRAINING }
@@ -24,6 +25,8 @@ const ROSTER_PATHS := [
 	"res://data/fighters/abang_ojol.tres",
 ]
 const VERSUS_FRAMES := 120
+## Frame layar versus saat tulisan VS dibanting (scripts/menu.gd).
+const VS_SLAM := 12
 ## Jeda setelah pertandingan selesai sebelum menu hasil muncul.
 const RESULT_DELAY := 100
 ## Gerak lambat saat KO: lamanya (frame gambar) dan perlambatannya.
@@ -102,6 +105,7 @@ var _slowmo := 0
 func _ready() -> void:
 	# Tanpa penggabungan input, supaya waktu tekan tombol tidak bergeser (skill godot-genre-fighting).
 	Input.use_accumulated_input = false
+	KeyBindings.load_saved()
 	for path in ROSTER_PATHS:
 		roster.append(load(path))
 	sim = FightSim.new()
@@ -307,9 +311,9 @@ func _nav_of(keycode: int) -> StringName:
 			return &"left"
 		KEY_D, KEY_RIGHT:
 			return &"right"
-		KEY_J, KEY_ENTER, KEY_KP_ENTER, KEY_SPACE, KEY_KP_1:
+		KEY_J, KEY_F, KEY_ENTER, KEY_KP_ENTER, KEY_SPACE:
 			return &"ok"
-		KEY_K, KEY_ESCAPE, KEY_BACKSPACE, KEY_KP_2:
+		KEY_K, KEY_G, KEY_ESCAPE, KEY_BACKSPACE:
 			return &"back"
 	return &""
 
@@ -328,9 +332,11 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		win.mode = Window.MODE_WINDOWED if win.mode == Window.MODE_FULLSCREEN else Window.MODE_FULLSCREEN
 		return
 	if controls_open:
-		# Tombol apa saja menutup daftar kontrol.
-		controls_open = false
-		sfx.play(&"block")
+		if controls.handle_key(key):
+			controls_open = false
+			sfx.play(&"block")
+		else:
+			sfx.play(&"catch")
 		_sync()
 		return
 	var nav := _nav_of(key.keycode)
@@ -414,6 +420,10 @@ func _physics_process(_delta: float) -> void:
 		_shot_frame = 0
 		_take_shot()
 		return
+	if screen == Screen.VERSUS and screen_frame == 1:
+		sfx.play(&"whoosh_heavy")
+	if screen == Screen.VERSUS and screen_frame == VS_SLAM:
+		sfx.play(&"hit_heavy")
 	if screen == Screen.VERSUS and screen_frame >= VERSUS_FRAMES:
 		_start_fight()
 	if screen != Screen.FIGHT or game_paused or controls_open:
@@ -457,6 +467,9 @@ func _demo_fast() -> bool:
 
 func _tick() -> void:
 	var in1: int = _cpu_p1.decide(sim, 0) if _demo else InputReader.read(0)
+	# Main sendiri: tombol pemain 2 ikut menggerakkan pemain 1, jadi panah dan J K U I tetap bisa dipakai.
+	if not _demo and p2_mode != P2Mode.PLAYER:
+		in1 |= InputReader.read(1)
 	var in2 := 0
 	match p2_mode:
 		P2Mode.CPU:

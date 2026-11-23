@@ -140,6 +140,22 @@ Rincian:
 
 Uji: `game/tests/sim_test.gd` 131 pemeriksaan lolos; layar title, select, versus, dan training terbuka tanpa error. Rekaman ada di `production/review/gerak_pertarungan.gif` dan `gerak_ultimate_emak.gif`.
 
+## 23 November 2026, kontrol dan layar versus
+
+Jeje minta P2 tanpa numpad (tidak semua keyboard punya), tombol bisa diubah, dan layar versus setelah memilih petarung diberi efek.
+
+| No | Keputusan | Menutup atau mengubah | Diterapkan di |
+| --- | --- | --- | --- |
+| 26 | Tombol bisa diubah di menu KONTROL dan tersimpan di `user://kontrol.cfg`. Bawaan tanpa numpad: P1 `W A S D` gerak, `F` `G` pukul, `R` `T` tendang, `H` tahan, `Y` skill, `B` ultimate; P2 panah gerak, `J` `K` pukul, `U` `I` tendang, `L` tahan, `O` skill, `P` ultimate. Saat main sendiri (lawan komputer, latihan), tombol P2 ikut menggerakkan P1, jadi tata letak lama (`W A S D` + `J K U I L O P`) tetap jalan. Panel kontrol ditutup dengan Esc, bukan tombol apa saja | Keputusan 19 (tutup dengan tombol apa saja) | `game/scripts/key_bindings.gd`, `game/scripts/controls_panel.gd`, `game/scripts/main.gd` |
+| 27 | Layar versus beranimasi: dua sisi miring masuk dari samping, VS dibanting dengan kilat putih, guncangan, cincin, dan percikan, petarung tampil dengan rig beranimasi, papan nama dengan nama ultimate, bara naik, kilat di garis tengah, bilah hitam sinematik, lalu layar memutih masuk ke pertarungan | Layar versus polos | `game/scripts/menu.gd`, `game/scripts/main.gd` (suara di frame 1 dan 12) |
+
+Rincian:
+
+- **Ubah tombol:** atas/bawah pilih aksi, kiri/kanan pilih pemain, Enter lalu tekan tombol baru. Tombol yang sudah dipakai aksi lain bertukar otomatis, jadi tidak ada satu tombol untuk dua aksi. Esc, Enter, Backspace, dan F1 sampai F6 serta F11 tidak bisa dipakai bertarung karena dipakai menu.
+- **`project.godot`:** daftar tombol `p1_` dan `p2_` di sana hanya cadangan; `key_bindings.gd` mengisi ulang Input Map saat game dibuka.
+- **Menu:** `F` dan `G` ikut berfungsi sebagai OK dan kembali di menu, sama seperti `J` dan `K`.
+- **Uji:** `game/tests/key_bindings_test.gd` (tukar, tolak tombol menu, simpan dan muat, bawaan tanpa tombol ganda). Tombol simpanan pemain dikembalikan setelah uji.
+
 ## Hasil 11 November 2026
 
 ### Kredit SpriteCook
